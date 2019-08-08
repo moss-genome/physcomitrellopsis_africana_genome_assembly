@@ -1,0 +1,10 @@
+###Remove Contigs <3kb###
+##sequences split by line breaks so first remove the line breaks (or the awk command cant count correctly)
+awk '/^>/ { print (NR==1 ? "" : RS) $0; next } { printf "%s", $0 } END { printf RS }' filein.fasta > fileout.fasta
+
+##remove scaffolds less than 3kb
+#"!/^>/" means if a line starts with > go to the next line
+#“getline” reads the next record and assigns the entire record to a variable called “seq”
+#"length(seq) >= 3000" If the length of the “seq” record is greater than, or equal to, 3000 then…
+#"{ print $0 "\n" seq }" Print all records ($0) of the variable “seq” in the file that matched our conditions, each on a new line (“\n”)
+awk '!/^>/ { next } { getline seq } length(seq) >= 3000 { print $0 "\n" seq }' filein.fasta > fileout.fasta
