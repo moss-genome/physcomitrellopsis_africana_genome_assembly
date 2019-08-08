@@ -38,6 +38,7 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
       1. **centrifuge_pafricana.sh runs** centrifuge on the genome assembly with min-hit-len 50 to correct for false-positives in the nanopore long-read assembly
       1. **remove_contaminated_reads_pafricana.py** removes contaminant contigs from the genome assembly based on contig ids from the centrifuge classification report.
    1. Purge haplotigs was run on the genome assembly to identify syntenic contigs.
+      1. **minmap_alignment_physcomitrellopsis_africana_polished_3kb_rmvcontam.sh** aligns the most recent polished assembly to the basecalled reads.
       1. **pafricana_purgehap.sh** runs purge haplotigs on the polished assembly in three steps.
 
 Path to Final Polished Genome Assembly:
