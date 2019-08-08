@@ -9,7 +9,7 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 
      Basecalled sequencing reads located at:
 
-     /labs/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-reads/
+          /labs/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-reads/
 
 1. Flye Assembly.
 
