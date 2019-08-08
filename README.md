@@ -1,4 +1,4 @@
-###### Physcomitrellopsis africana Genome Assembly
+### Physcomitrellopsis africana Genome Assembly
 Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit?usp=sharing
 
 1. Nanopore Sequencing.
