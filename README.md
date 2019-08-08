@@ -14,6 +14,7 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 1. Flye Assembly.
 
      Draft genome assembly created using Flye genome assembly program.
+     
      **flye_assembly_moss_30JAN19_5074.sh** script runs Flye assembly program with basecalled sequencing reads as input.
 
      Path to Initial Flye Assembly:
