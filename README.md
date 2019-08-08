@@ -21,7 +21,7 @@ Path to Initial Flye Assembly:
 1. Nanopolish Genome Assembly
    1. Basecalled fastq reads are linked to signal-level nanopore raw fast5 data using nanopolish index.
       1. nanopolish_index_physcomitrellopsis_africana.sh indexes the basecalled reads.
-      1. Basecalled reads are aligned to the initial flye assembly using minimap2, and the bam alignment file is sorted and indexed using samtools.
+   1. Basecalled reads are aligned to the initial flye assembly using minimap2, and the bam alignment file is sorted and indexed using samtools.
       1. minmap_alignment_physcomitrellopsis_africana.sh script performs minimap2 alignment of reads to assembly and samtools processing of bam alignment file.
    1. Polished genome assembly is created with nanopolish.
       1. nanopolish_physcomitrellopsis_africana.sh generates polished assembly contigs in 50kb parts in vcf format
