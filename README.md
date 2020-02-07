@@ -3,34 +3,34 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 
 # 1. Nanopore Sequencing.
 
-     Physcomitrellopsis africana tissue sequenced using Nanopore PromethION technology.
+Physcomitrellopsis africana tissue sequenced using Nanopore PromethION technology.
      Raw sequencing run data located at:
 
        /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-fast5_pass/
 
-     Basecalled sequencing reads located at:
+Basecalled sequencing reads located at:
 
        /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-reads/
 
 # 1. Genome Assembly.
 
 ## Flye Assembly
-     Draft genome assembly created using Flye genome assembly program.
+Draft genome assembly created using Flye genome assembly program.
      
-     **flye_assembly_moss_30JAN19_5074.sh** script runs Flye assembly program with basecalled sequencing reads as input.
+**flye_assembly_moss_30JAN19_5074.sh** script runs Flye assembly program with basecalled sequencing reads as input.
 
-     Path to Initial Flye Assembly:
+Path to Initial Flye Assembly:
 
        /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/assembly.fasta
 
 ## Flye Assembly with Clean Input Reads
-     Draft genome assembly created using Flye genome assembly program with cleaned input reads.
+Draft genome assembly created using Flye genome assembly program with cleaned input reads.
      
      1. **centrifuge_pafricana_promethion_reads.sh** runs centrifuge classification program on the raw basecalled sequencing reads.
      1. **filter_reads.sh** runs **remove_contaminated_reads_pafricana.py** to remove contaminated reads from basecalled sequencing reads.
      1. **flye_assembly_rmv_contam_moss_30JAN19_5074.sh** runs Flye genome assembly program with clean input reads.
      
-     Path to Initial Flye Assembly with Clean Input Reads:
+Path to Initial Flye Assembly with Clean Input Reads:
      
        /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam/flye_assembly_rmv_contam/assembly.fasta
 
