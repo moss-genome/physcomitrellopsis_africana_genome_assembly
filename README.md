@@ -25,9 +25,9 @@ Path to Initial Flye Assembly:
 
 ## Flye Assembly with Clean Input Reads
 Draft genome assembly created using Flye genome assembly program with cleaned input reads.
-    1.**centrifuge_pafricana_promethion_reads.sh** runs centrifuge classification program on the raw basecalled sequencing reads.
-    1.**filter_reads.sh** runs **remove_contaminated_reads_pafricana.py** to remove contaminated reads from basecalled sequencing reads.
-    1.**flye_assembly_rmv_contam_moss_30JAN19_5074.sh** runs Flye genome assembly program with clean input reads.
+     1. **centrifuge_pafricana_promethion_reads.sh** runs centrifuge classification program on the raw basecalled sequencing reads.
+     1. **filter_reads.sh** runs **remove_contaminated_reads_pafricana.py** to remove contaminated reads from basecalled sequencing reads.
+     1. **flye_assembly_rmv_contam_moss_30JAN19_5074.sh** runs Flye genome assembly program with clean input reads.
      
 Path to Initial Flye Assembly with Clean Input Reads:
      
