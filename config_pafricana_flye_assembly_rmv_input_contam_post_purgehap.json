@@ -1,0 +1,42 @@
+{
+  "cc": {
+    "fofn": "/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/pb.fofn",
+    "isdip": 1,
+    "core": 12,
+    "mem": 20000,
+    "queue": "general",
+    "ispb": 1,
+    "skip": 0
+  },
+  "sa": {
+    "core": 12,
+    "mem": 10000,
+    "queue": "general"
+  },
+  "busco": {
+    "core": 12,
+    "mem": 20000,
+    "queue": "general",
+    "skip": 0,
+    "lineage": "embryophyta",
+    "prefix": "polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid_purged",
+    "tmpdir": "busco_tmp"
+  },
+  "pd": {
+    "mem": 20000,
+    "queue": "general"
+  },
+  "gs": {
+    "mem": 10000
+  },
+  "kcp": {
+    "core": 12,
+    "mem": 30000,
+    "fofn": "",
+    "prefix": "polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid_purged_kcm",
+    "tmpdir": "kcp_tmp",
+    "skip": 1
+  },
+  "ref": "/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.fasta",
+  "out_dir": "polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid_55"
+}
