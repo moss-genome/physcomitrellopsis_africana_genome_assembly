@@ -177,7 +177,7 @@ Draft genome assembly created using Flye genome assembly program with cleaned in
           Viridiplantae: C:83.0%[S:72.1%,D:10.9%],F:4.7%,M:12.3%,n:430
           Embryophyta: C:72.6%[S:65.2%,D:7.4%],F:6.2%,M:21.2%,n:1375
 
-**P. africana Polished Flye Assembly (rmv contam input reads, post-purgehap, purgedup)**
+**P. africana Polished Flye Assembly (rmv contam input reads, post-purgehap, purgedup) FINAL ASSEMBLY SELECTED FOR TRANSCRIPTOME ANALYSIS**
      
     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid_55/seqs/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.purged.fa
 
