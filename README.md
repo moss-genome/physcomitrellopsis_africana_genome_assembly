@@ -168,14 +168,14 @@ Draft genome assembly created using Flye genome assembly program with cleaned in
 
 **P. africana Polished Flye Assembly (rmv contam input reads & purgehap)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_haplotigs/purge_haplotigs_rmv_input_contam_low_midpoint/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.fasta
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_haplotigs/purge_haplotigs_rmv_input_contam_low_midpoint_55/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.fasta
 
-      Genome Size: 520206614
-      # of Contigs: 3181
-      N50: 401373
+      Genome Size: 531269006
+      # of Contigs: 3656
+      N50: 395401
       BUSCO:
-          Viridiplantae: C:83.0%[S:72.1%,D:10.9%],F:4.7%,M:12.3%,n:430
-          Embryophyta: C:72.6%[S:65.2%,D:7.4%],F:6.2%,M:21.2%,n:1375
+          Viridiplantae: C:83.5%[S:71.4%,D:12.1%],F:5.1%,M:11.4%,n:430
+          Embryophyta: C:72.6%[S:64.7%,D:7.9%],F:6.2%,M:21.2%,n:1375
 
 **P. africana Polished Flye Assembly (rmv contam input reads, post-purgehap, purgedup) FINAL ASSEMBLY SELECTED FOR TRANSCRIPTOME ANALYSIS**
      
