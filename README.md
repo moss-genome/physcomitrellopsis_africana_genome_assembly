@@ -62,6 +62,61 @@ Draft genome assembly created using Flye genome assembly program with cleaned in
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
 
+## Shasta Assembly
+**Note:** Shasta Assembly was not selected for further refinement 
+
+Draft genome assembly created using Shasta genome assembly program.
+   1. **FastqToFasta.py** converts input reads from fastq format to fasta format
+   1. **run_shasta_assembly_minlen_500.sh** runs Shasta genome assembly program with minimum accepted input read length of 500 base pairs
+     
+**P. africana Shasta Assembly (minlen 500)**
+     
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/test_shasta_assembly/2ShastaRun/Assembly.fasta
+
+      Genome Size: 223004245
+      # of Contigs: 8945
+      N50: 51351
+      BUSCO:
+          Viridiplantae: C:38.2%[S:36.3%,D:1.9%],F:19.1%,M:42.7%,n:430
+          Embryophyta: C:31.3%[S:30.1%,D:1.2%],F:12.8%,M:55.9%,n:1375
+          
+**P. africana Shasta Assembly (minlen 500 & <3kb filtered)**
+
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/test_shasta_assembly/2ShastaRun/pafricana_shasta_assembly_3kb_minlen_500.fasta
+
+      Genome Size: 220227121
+      # of Contigs: 7135
+      N50: 52035
+      BUSCO:
+          Viridiplantae: C:38.2%[S:36.3%,D:1.9%],F:18.8%,M:43.0%,n:430
+          Embryophyta: C:31.3%[S:30.1%,D:1.2%],F:12.8%,M:55.9%,n:1375
+  
+**Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
+**Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
+
+## Shasta Assembly (rmv contam input)
+**Note:** Shasta Assembly (rmv contam input) was not selected for further refinement
+
+Draft genome assembly created using Shasta genome assembly program with cleaned input reads.
+   1. **centrifuge_pafricana_promethion_reads.sh** runs centrifuge classification program on the raw basecalled sequencing reads.
+   1. **filter_reads.sh** runs **remove_contaminated_reads_pafricana.py** to remove contaminated reads from basecalled sequencing reads.
+   1. **FastqToFasta.py** converts clean input reads from fastq format to fasta format
+   1. **run_shasta_assembly_minlen_500_rmv_contam_input.sh** runs Shasta genome assembly program with clean input reads and minimum accepted input read length of 500 base pairs
+     
+**P. africana Shasta Assembly (minlen 500 & rmv contamination input reads)**
+     
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/test_shasta_assembly/ShastaRun_pafricana_rmv_contam_minreadlen_500/Assembly.fasta
+
+      Genome Size: 211680036
+      # of Contigs: 8515
+      N50: 48947
+      BUSCO:
+          Viridiplantae: C:40.2%[S:38.6%,D:1.6%],F:20.0%,M:39.8%,n:430
+          Embryophyta: C:29.8%[S:28.7%,D:1.1%],F:14.7%,M:55.5%,n:1375
+          
+**Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
+**Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
+
 # 3. Nanopolish to Improve Genome Assembly
 
 ## Flye Assembly
