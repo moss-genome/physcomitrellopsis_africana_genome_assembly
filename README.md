@@ -26,7 +26,7 @@ Draft genome assembly created using Flye genome assembly program.
       # of Contigs: 9796
       N50: 151896
       BUSCO:
-          Viridiplantae: C:56.1%[S:48.4%,D:7.7%],F:14.4%,M:29.5%,n:430
+          Viridiplantae: C:48.9%[S:45.4%,D:3.5%],F:25.9%,M:25.2%,n:425
           Embryophyta: C:37.3%[S:35.4%,D:1.9%],F:15.8%,M:46.9%,n:1375
 
 **P. africana Flye Assembly (< 3Kb scaffolds filtered)**
