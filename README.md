@@ -27,17 +27,17 @@ Draft genome assembly created using Flye genome assembly program.
       N50: 151896
       BUSCO:
           Viridiplantae: C:48.9%[S:45.4%,D:3.5%],F:25.9%,M:25.2%,n:425
-          Embryophyta: C:37.3%[S:35.4%,D:1.9%],F:15.8%,M:46.9%,n:1375
+          Embryophyta: C:24.8%[S:23.3%,D:1.5%],F:13.1%,M:62.1%,n:1614
 
 **P. africana Flye Assembly (< 3Kb scaffolds filtered)**
-*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/filter_assembly_contam_3kb/pafricana_3kb.fasta
+*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/pafricana_initial_flye_assembly_3kb.fasta
 
-      Genome Size: 446578038
-      # of Contigs: 7731
-      N50: 130342
+      Genome Size: 538685308
+      # of Contigs: 8388
+      N50: 152580
       BUSCO:
-          Viridiplantae: C:52.6%[S:47.7%,D:4.9%],F:17.9%,M:29.5%,n:430
-          Embryophyta: C:37.5%[S:36.1%,D:1.4%],F:16.7%,M:45.8%,n:1375
+          Viridiplantae: 
+          Embryophyta: 
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
