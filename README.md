@@ -202,7 +202,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **P. africana Polished Flye Assembly (Contam, <3kb scaffolds filtered, & purgehaplotigs)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/polished_assembly/physcomitrellopsis_africana_3kb_rmvcontam_purgehap_assembly.fasta
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/polished_assembly/physcomitrellopsis_africana_polished_3kb_rmvcontam_purgehap_assembly.fasta
 
       Genome Size: 423566072
       # of Contigs: 6038
