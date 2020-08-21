@@ -36,7 +36,7 @@ Draft genome assembly created using Flye genome assembly program.
       # of Contigs: 8388
       N50: 152580
       BUSCO:
-          Viridiplantae: 
+          Viridiplantae: C:49.7%[S:45.9%,D:3.8%],F:25.4%,M:24.9%,n:425
           Embryophyta: 
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
@@ -56,8 +56,8 @@ Draft genome assembly created using Flye genome assembly program with cleaned in
       # of Contigs: 5754
       N50: 388035
       BUSCO:
-          Viridiplantae: C:74.9%[S:70.0%,D:4.9%],F:8.1%,M:17.0%,n:430
-          Embryophyta: C:57.9%[S:54.3%,D:3.6%],F:11.3%,M:30.8%,n:1375
+          Viridiplantae: C:71.7%[S:66.8%,D:4.9%],F:16.9%,M:11.4%,n:425
+          Embryophyta: 
           
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
@@ -77,8 +77,8 @@ Draft genome assembly created using Shasta genome assembly program.
       # of Contigs: 8945
       N50: 51351
       BUSCO:
-          Viridiplantae: C:38.2%[S:36.3%,D:1.9%],F:19.1%,M:42.7%,n:430
-          Embryophyta: C:31.3%[S:30.1%,D:1.2%],F:12.8%,M:55.9%,n:1375
+          Viridiplantae: C:36.7%[S:36.2%,D:0.5%],F:23.8%,M:39.5%,n:425
+          Embryophyta: 
           
 **P. africana Shasta Assembly (minlen 500 & <3kb filtered)**
 
@@ -88,8 +88,8 @@ Draft genome assembly created using Shasta genome assembly program.
       # of Contigs: 7135
       N50: 52035
       BUSCO:
-          Viridiplantae: C:38.2%[S:36.3%,D:1.9%],F:18.8%,M:43.0%,n:430
-          Embryophyta: C:31.3%[S:30.1%,D:1.2%],F:12.8%,M:55.9%,n:1375
+          Viridiplantae: C:36.7%[S:36.2%,D:0.5%],F:23.8%,M:39.5%,n:425
+          Embryophyta: C:17.4%[S:17.3%,D:0.1%],F:12.4%,M:70.2%,n:1614
   
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
@@ -111,8 +111,8 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       # of Contigs: 8515
       N50: 48947
       BUSCO:
-          Viridiplantae: C:40.2%[S:38.6%,D:1.6%],F:20.0%,M:39.8%,n:430
-          Embryophyta: C:29.8%[S:28.7%,D:1.1%],F:14.7%,M:55.5%,n:1375
+          Viridiplantae: C:38.3%[S:38.1%,D:0.2%],F:24.2%,M:37.5%,n:425
+          Embryophyta: C:19.9%[S:19.6%,D:0.3%],F:12.3%,M:67.8%,n:1614
           
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
@@ -137,8 +137,8 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       # of Contigs: 9791
       N50: 150051
       BUSCO:
-          Viridiplantae: C:82.8%[S:70.7%,D:12.1%],F:4.7%,M:12.5%,n:430
-          Embryophyta: C:70.9%[S:63.6%,D:7.3%],F:6.0%,M:23.1%,n:1375
+          Viridiplantae: C:85.6%[S:74.8%,D:10.8%],F:7.3%,M:7.1%,n:425
+          Embryophyta: C:65.6%[S:59.2%,D:6.4%],F:5.3%,M:29.1%,n:1614
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
@@ -162,8 +162,8 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       # of Contigs: 5754
       N50: 386201
       BUSCO:
-          Viridiplantae: C:84.7%[S:70.5%,D:14.2%],F:4.2%,M:11.1%,n:430
-          Embryophyta: C:72.7%[S:64.7%,D:8.0%],F:6.0%,M:21.3%,n:1375
+          Viridiplantae: C:88.2%[S:78.8%,D:9.4%],F:5.4%,M:6.4%,n:425
+          Embryophyta: C:67.3%[S:60.7%,D:6.6%],F:4.8%,M:27.9%,n:1614
 
 **P. africana Polished Flye Assembly (rmv contam input reads & <3kb contigs)**
      
@@ -173,8 +173,8 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       # of Contigs: 3968
       N50: 388959
       BUSCO:
-          Viridiplantae: C:84.4%[S:70.2%,D:14.2%],F:4.4%,M:11.2%,n:430
-          Embryophyta: C:73.2%[S:64.9%,D:8.3%],F:5.6%,M:21.2%,n:1375
+          Viridiplantae: C:87.8%[S:78.4%,D:9.4%],F:5.9%,M:6.3%,n:425
+          Embryophyta: 
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
@@ -197,8 +197,8 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       # of Contigs: 7712
       N50: 130312
       BUSCO:
-          Viridiplantae: C:81.1%[S:72.3%,D:8.8%],F:5.1%,M:13.8%,n:430
-          Embryophyta: C:71.3%[S:65.3%,D:6.0%],F:6.5%,M:22.2%,n:1375
+          Viridiplantae: C:85.1%[S:77.6%,D:7.5%],F:6.1%,M:8.8%,n:425
+          Embryophyta: C:67.4%[S:62.0%,D:5.4%],F:5.9%,M:26.7%,n:1614
 
 **P. africana Polished Flye Assembly (Contam, <3kb scaffolds filtered, & purgehaplotigs)**
      
@@ -208,8 +208,8 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       # of Contigs: 6038
       N50: 138455
       BUSCO:
-          Viridiplantae: C:81.4%[S:73.3%,D:8.1%],F:4.7%,M:13.9%,n:430
-          Embryophyta: C:71.1%[S:65.3%,D:5.8%],F:6.5%,M:22.4%,n:1375
+          Viridiplantae: C:86.1%[S:78.8%,D:7.3%],F:5.4%,M:8.5%,n:425
+          Embryophyta: C:67.2%[S:61.8%,D:5.4%],F:5.6%,M:27.2%,n:1614
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
@@ -229,8 +229,8 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       # of Contigs: 3656
       N50: 395401
       BUSCO:
-          Viridiplantae: C:83.5%[S:71.4%,D:12.1%],F:5.1%,M:11.4%,n:430
-          Embryophyta: C:72.6%[S:64.7%,D:7.9%],F:6.2%,M:21.2%,n:1375
+          Viridiplantae: C:88.2%[S:78.8%,D:9.4%],F:5.4%,M:6.4%,n:425
+          Embryophyta: C:67.8%[S:61.8%,D:6.0%],F:5.2%,M:27.0%,n:1614
 
 **P. africana Polished Flye Assembly (rmv contam input reads, post-purgehap, purgedup) FINAL ASSEMBLY SELECTED FOR TRANSCRIPTOME ANALYSIS**
      
@@ -240,8 +240,8 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       # of Contigs: 2681
       N50: 402952
       BUSCO:
-          Viridiplantae: C:83.5%[S:72.8%,D:10.7%],F:4.2%,M:12.3%,n:430
-          Embryophyta: C:72.6%[S:65.3%,D:7.3%],F:6.0%,M:21.4%,n:1375
+          Viridiplantae: C:87.3%[S:78.6%,D:8.7%],F:5.9%,M:6.8%,n:425
+          Embryophyta: C:67.8%[S:61.9%,D:5.9%],F:5.2%,M:27.0%,n:1614
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
