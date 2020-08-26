@@ -37,7 +37,7 @@ Draft genome assembly created using Flye genome assembly program.
       N50: 152580
       BUSCO:
           Viridiplantae: C:49.7%[S:45.9%,D:3.8%],F:25.4%,M:24.9%,n:425
-          Embryophyta: 
+          Embryophyta: C:25.0%[S:23.5%,D:1.5%],F:13.3%,M:61.7%,n:1614
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
@@ -57,7 +57,7 @@ Draft genome assembly created using Flye genome assembly program with cleaned in
       N50: 388035
       BUSCO:
           Viridiplantae: C:71.7%[S:66.8%,D:4.9%],F:16.9%,M:11.4%,n:425
-          Embryophyta: 
+          Embryophyta: C:49.3%[S:46.3%,D:3.0%],F:10.4%,M:40.3%,n:1614
           
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
@@ -78,7 +78,7 @@ Draft genome assembly created using Shasta genome assembly program.
       N50: 51351
       BUSCO:
           Viridiplantae: C:36.7%[S:36.2%,D:0.5%],F:23.8%,M:39.5%,n:425
-          Embryophyta: 
+          Embryophyta: C:17.5%[S:17.4%,D:0.1%],F:12.5%,M:70.0%,n:1614
           
 **P. africana Shasta Assembly (minlen 500 & <3kb filtered)**
 
@@ -174,7 +174,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       N50: 388959
       BUSCO:
           Viridiplantae: C:87.8%[S:78.4%,D:9.4%],F:5.9%,M:6.3%,n:425
-          Embryophyta: 
+          Embryophyta: C:67.1%[S:60.5%,D:6.6%],F:5.1%,M:27.8%,n:1614
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
