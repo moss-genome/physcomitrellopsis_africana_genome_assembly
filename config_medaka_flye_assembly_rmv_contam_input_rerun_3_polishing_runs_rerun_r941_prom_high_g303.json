@@ -1,0 +1,42 @@
+{
+  "cc": {
+    "fofn": "/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/pb.fofn",
+    "isdip": 1,
+    "core": 12,
+    "mem": 20000,
+    "queue": "normal",
+    "ispb": 1,
+    "skip": 0
+  },
+  "sa": {
+    "core": 12,
+    "mem": 10000,
+    "queue": "normal"
+  },
+  "busco": {
+    "core": 12,
+    "mem": 20000,
+    "queue": "long",
+    "skip": 0,
+    "lineage": "viridiplantae",
+    "prefix": "consensus_purged",
+    "tmpdir": "busco_tmp"
+  },
+  "pd": {
+    "mem": 20000,
+    "queue": "normal"
+  },
+  "gs": {
+    "mem": 10000
+  },
+  "kcp": {
+    "core": 12,
+    "mem": 30000,
+    "fofn": "",
+    "prefix": "consensus_purged_kcm",
+    "tmpdir": "kcp_tmp",
+    "skip": 1
+  },
+  "ref": "/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/consensus.fasta",
+  "out_dir": "purge_dup_medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303"
+}
