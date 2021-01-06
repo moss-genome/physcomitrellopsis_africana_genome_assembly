@@ -295,8 +295,8 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       # of Contigs: 2256
       N50: 604625
       BUSCO:
-          Viridiplantae: 
-          Embryophyta: 
+          Viridiplantae: C:90.8%[S:80.7%,D:10.1%],F:2.8%,M:6.4%,n:425
+          Embryophyta: C:72.0%[S:64.9%,D:7.1%],F:3.8%,M:24.2%,n:1614
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
