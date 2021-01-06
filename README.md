@@ -62,6 +62,25 @@ Draft genome assembly created using Flye genome assembly program with cleaned in
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
 
+## Flye Assembly (rmv contam input reads & 3 additional polishing runs)
+Draft genome assembly created using Flye genome assembly program with clean read input reads and 3 additional polishing runs.
+
+**flye_assembly_pafricana_rmv_contam_input_rerun_3_polishing_runs.sh** runs Flye assembly program with clean input reads & 3 additional polishing runs.
+
+**P. africana Flye Assembly (rmv contam input reads & 3 additional polishing runs)**
+
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam_input_rerun/flye_assembly_rmv_contam_input_rerun_3_polishing_runs/assembly.fasta
+
+      Genome Size: 556343009
+      # of Contigs: 4721
+      N50: 596646
+      BUSCO:
+          Viridiplantae: C:89.4%[S:77.9%,D:11.5%],F:4.0%,M:6.6%,n:425
+          Embryophyta: C:70.3%[S:63.7%,D:6.6%],F:4.3%,M:25.4%,n:1614
+
+**Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
+**Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
+
 ## Shasta Assembly
 **Note:** Shasta Assembly was not selected for further refinement 
 
@@ -117,9 +136,9 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
 
-# 3. Nanopolish to Improve Genome Assembly
+# 3. Genome Assembly Polishing
 
-## Flye Assembly
+## Nanopolish on Flye Assembly
    1. Basecalled fastq reads are linked to signal-level nanopore raw fast5 data using nanopolish index.
       1. **nanopolish_index_physcomitrellopsis_africana.sh** indexes the basecalled reads.
    1. Basecalled reads are aligned to the initial flye assembly using minimap2, and the bam alignment file is sorted and indexed using samtools.
@@ -143,7 +162,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
 
-## Flye Assembly (Rmv Contam Input)
+## Nanopolish on Flye Assembly (Rmv Contam Input)
    1. Basecalled fastq reads are linked to signal-level nanopore raw fast5 data using nanopolish index.
       1. **nanopolish_index_pafricana_flye_rmv_contam.sh** indexes the basecalled reads.
    1. Basecalled reads are aligned to the initial flye assembly using minimap2, and the bam alignment file is sorted and indexed using samtools.
@@ -175,6 +194,24 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       BUSCO:
           Viridiplantae: C:87.8%[S:78.4%,D:9.4%],F:5.9%,M:6.3%,n:425
           Embryophyta: C:67.1%[S:60.5%,D:6.6%],F:5.1%,M:27.8%,n:1614
+
+**Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
+**Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
+
+## Medaka on Flye Assembly (rmv contam input reads & 3 additional polishing runs)
+
+**medaka_pafricana_genome.sh** runs Medaka error correction program on Flye assembly with clean input reads & 3 additional polishing runs.
+
+**P. africana Flye Assembly (rmv contam input reads, 3 additional polishing runs, & Medaka polishing)**
+
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/medaka/medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303/consensus.fasta
+      
+      Genome Size: 557068589
+      # of Contigs: 5045
+      N50: 590698
+      BUSCO:
+          Viridiplantae: C:92.5%[S:80.0%,D:12.5%],F:2.8%,M:4.7%,n:425
+          Embryophyta: C:72.4%[S:64.5%,D:7.9%],F:3.4%,M:24.2%,n:1614
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
@@ -232,7 +269,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
           Viridiplantae: C:88.2%[S:78.8%,D:9.4%],F:5.4%,M:6.4%,n:425
           Embryophyta: C:67.8%[S:61.8%,D:6.0%],F:5.2%,M:27.0%,n:1614
 
-**P. africana Polished Flye Assembly (rmv contam input reads, post-purgehap, purgedup) FINAL ASSEMBLY SELECTED FOR TRANSCRIPTOME ANALYSIS**
+**P. africana Polished Flye Assembly (rmv contam input reads, post-purgehap, purgedup)**
      
     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid_55/seqs/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.purged.fa
 
@@ -246,3 +283,20 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
 
+## Flye Assembly (rmv contam input reads, 3 additional polishing runs, & Medaka polishing)
+   1. Purge-dups was run on the medaka error-corrected rmv input contam & 3 additional polishing runs flye assembly to further reduce the duplication of the assembly.
+      1. **run_purge_dups_medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303.sh** runs purge-dups with information from **config_medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303.json**. **pb.fofn** contains the path to the long-read input data.
+
+**P. africana Flye Assembly (rmv contam input reads, 3 additional polishing runs, Medaka polishing, & purgedup)**
+     
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_haplotigs/purge_haplotigs_rmv_input_contam_low_midpoint_55/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.fasta
+
+      Genome Size: 528022983
+      # of Contigs: 2256
+      N50: 604625
+      BUSCO:
+          Viridiplantae: 
+          Embryophyta: 
+
+**Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
+**Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
