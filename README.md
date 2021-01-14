@@ -45,6 +45,7 @@ Draft genome assembly created using Flye genome assembly program.
 ## Flye Assembly (Rmv Contam Input)
 Draft genome assembly created using Flye genome assembly program with cleaned input reads.
    1. **centrifuge_pafricana_promethion_reads.sh** runs centrifuge classification program on the raw basecalled sequencing reads.
+   1. **isolate_contaminated_read_ids.py** creates a list of contaminated read ids from the centrifuge output file **centrifuge_pafricana_promethion_fastq_reads_444526.out**.
    1. **filter_reads.sh** runs **remove_contaminated_reads_pafricana.py** to remove contaminated reads from basecalled sequencing reads.
    1. **flye_assembly_rmv_contam_moss_30JAN19_5074.sh** runs Flye genome assembly program with clean input reads.
      
@@ -118,9 +119,10 @@ Draft genome assembly created using Shasta genome assembly program.
 
 Draft genome assembly created using Shasta genome assembly program with cleaned input reads.
    1. **centrifuge_pafricana_promethion_reads.sh** runs centrifuge classification program on the raw basecalled sequencing reads.
+   1. **isolate_contaminated_read_ids.py** creates a list of contaminated read ids from the centrifuge output file **centrifuge_pafricana_promethion_fastq_reads_444526.out**.
    1. **filter_reads.sh** runs **remove_contaminated_reads_pafricana.py** to remove contaminated reads from basecalled sequencing reads.
    1. **FastqToFasta.py** converts clean input reads from fastq format to fasta format
-   1. **run_shasta_assembly_minlen_500_rmv_contam_input.sh** runs Shasta genome assembly program with clean input reads and minimum accepted input read length of 500 base pairs
+   1. **run_shasta_assembly_minlen_500_rmv_contam_input.sh** runs Shasta genome assembly program with clean input reads and minimum accepted input read length of 500 base pairs.
      
 **P. africana Shasta Assembly (minlen 500 & rmv contamination input reads)**
      
