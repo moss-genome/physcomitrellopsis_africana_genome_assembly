@@ -6,11 +6,11 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 Physcomitrellopsis africana tissue sequenced using Nanopore PromethION technology.
      Raw sequencing run data located at:
 
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-fast5_pass/
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-fast5_pass/
 
 Basecalled sequencing reads located at:
 
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-reads/
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-reads/
 
 # 2. Genome Assembly.
 
@@ -20,7 +20,7 @@ Draft genome assembly created using Flye genome assembly program.
 **flye_assembly_moss_30JAN19_5074.sh** script runs Flye assembly program with basecalled sequencing reads as input.
 
 **P. africana Initial Flye Assembly**
-*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_initial/assembly.fasta
+*     /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_initial/assembly.fasta
 
       Genome Size: 540816378
       # of Contigs: 9796
@@ -30,7 +30,7 @@ Draft genome assembly created using Flye genome assembly program.
           Embryophyta: C:24.8%[S:23.3%,D:1.5%],F:13.1%,M:62.1%,n:1614
 
 **P. africana Flye Assembly (< 3Kb scaffolds filtered)**
-*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/pafricana_initial_flye_assembly_3kb.fasta
+*     /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/pafricana_initial_flye_assembly_3kb.fasta
 
       Genome Size: 538685308
       # of Contigs: 8388
@@ -51,7 +51,7 @@ Draft genome assembly created using Flye genome assembly program with cleaned in
      
 **P. africana Flye Assembly (rmv contam input reads)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam/flye_assembly_rmv_contam/assembly.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam/flye_assembly_rmv_contam/assembly.fasta
 
       Genome Size: 547438596
       # of Contigs: 5754
@@ -70,7 +70,7 @@ Draft genome assembly created using Flye genome assembly program with clean read
 
 **P. africana Flye Assembly (rmv contam input reads & 3 additional polishing runs)**
 
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam_input_rerun/flye_assembly_rmv_contam_input_rerun_3_polishing_runs/assembly.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam_input_rerun/flye_assembly_rmv_contam_input_rerun_3_polishing_runs/assembly.fasta
 
       Genome Size: 556343009
       # of Contigs: 4721
@@ -91,7 +91,7 @@ Draft genome assembly created using Shasta genome assembly program.
      
 **P. africana Shasta Assembly (minlen 500)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/test_shasta_assembly/2ShastaRun/Assembly.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/test_shasta_assembly/2ShastaRun/Assembly.fasta
 
       Genome Size: 223004245
       # of Contigs: 8945
@@ -102,7 +102,7 @@ Draft genome assembly created using Shasta genome assembly program.
           
 **P. africana Shasta Assembly (minlen 500 & <3kb filtered)**
 
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/test_shasta_assembly/2ShastaRun/pafricana_shasta_assembly_3kb_minlen_500.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/test_shasta_assembly/2ShastaRun/pafricana_shasta_assembly_3kb_minlen_500.fasta
 
       Genome Size: 220227121
       # of Contigs: 7135
@@ -126,7 +126,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
      
 **P. africana Shasta Assembly (minlen 500 & rmv contamination input reads)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/test_shasta_assembly/ShastaRun_pafricana_rmv_contam_minreadlen_500/Assembly.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/test_shasta_assembly/ShastaRun_pafricana_rmv_contam_minreadlen_500/Assembly.fasta
 
       Genome Size: 211680036
       # of Contigs: 8515
@@ -152,7 +152,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **P. africana Polished Flye Assembly**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/polished_assembly/physcomitrellopsis_africana_polished_assembly.fa
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/polished_assembly/physcomitrellopsis_africana_polished_assembly.fa
 
       Genome Size: 534238232
       # of Contigs: 9791
@@ -177,7 +177,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **P. africana Polished Flye Assembly (rmv contam input reads)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam/polished_pafricana_flye_assembly_rmv_contam.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam/polished_pafricana_flye_assembly_rmv_contam.fasta
 
       Genome Size: 545041764
       # of Contigs: 5754
@@ -188,7 +188,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **P. africana Polished Flye Assembly (rmv contam input reads & <3kb contigs)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam/polished_pafricana_flye_assembly_3kb_rmv_contam.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/flye_assembly/flye_assembly_rmv_contam/polished_pafricana_flye_assembly_3kb_rmv_contam.fasta
 
       Genome Size: 542202628
       # of Contigs: 3968
@@ -206,7 +206,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **P. africana Flye Assembly (rmv contam input reads, 3 additional polishing runs, & Medaka polishing)**
 
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/medaka/medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303/consensus.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/medaka/medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303/consensus.fasta
       
       Genome Size: 557068589
       # of Contigs: 5045
@@ -230,7 +230,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
       
 **P.africana Polished Flye Assembly (Contam & <3Kb scaffolds filtered)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/polished_assembly/physcomitrellopsis_africana_polished_3kb_rmvcontam_assembly.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/polished_assembly/physcomitrellopsis_africana_polished_3kb_rmvcontam_assembly.fasta
 
       Genome Size: 444358046
       # of Contigs: 7712
@@ -241,7 +241,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **P. africana Polished Flye Assembly (Contam, <3kb scaffolds filtered, & purgehaplotigs)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/polished_assembly/physcomitrellopsis_africana_polished_3kb_rmvcontam_purgehap_assembly.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/polished_assembly/physcomitrellopsis_africana_polished_3kb_rmvcontam_purgehap_assembly.fasta
 
       Genome Size: 423566072
       # of Contigs: 6038
@@ -262,7 +262,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **P. africana Polished Flye Assembly (rmv contam input reads & purgehap)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_haplotigs/purge_haplotigs_rmv_input_contam_low_midpoint_55/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_haplotigs/purge_haplotigs_rmv_input_contam_low_midpoint_55/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.fasta
 
       Genome Size: 531269006
       # of Contigs: 3656
@@ -273,7 +273,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **P. africana Polished Flye Assembly (rmv contam input reads, post-purgehap, purgedup)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid_55/seqs/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.purged.fa
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid_55/seqs/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.purged.fa
 
       Genome Size: 516772002
       # of Contigs: 2681
@@ -291,7 +291,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **P. africana Flye Assembly (rmv contam input reads, 3 additional polishing runs, Medaka polishing, & purgedup)**
      
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_haplotigs/purge_haplotigs_rmv_input_contam_low_midpoint_55/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.fasta
+    /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_haplotigs/purge_haplotigs_rmv_input_contam_low_midpoint_55/polished_pafricana_flye_assembly_rmv_input_contam_reads_purgehap_low_mid.fasta
 
       Genome Size: 528022983
       # of Contigs: 2256
