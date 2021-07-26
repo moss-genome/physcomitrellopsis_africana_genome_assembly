@@ -138,6 +138,100 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
 
+## Haslr Assembly
+Draft genome assembly created using Haslr genome assembly program.
+     
+**pafricana_run_haslr_assembly.sh** script runs Haslr assembly program with raw Illumina reads as input.
+
+**P. africana Initial Haslr Assembly**
+*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pafricana_haslr_assembly/assembly_run_1/pafricana_haslr_assembly/asm_contigs_k49_a3_c250_lr25x_b500_s3_sim0.85/asm.final.fa
+
+      Genome Size: 218471996
+      # of Contigs: 10739
+      N50: 36010
+      BUSCO:
+          Viridiplantae: C:49.4%[S:45.4%,D:4.0%],F:5.6%,M:45.0%,n:425
+          Embryophyta: C:39.5%[S:36.7%,D:2.8%],F:2.7%,M:57.8%,n:1614
+
+## Haslr Assembly (trimmed Illumina read input)
+Draft genome assembly created using Haslr genome assembly program.
+
+**sickle_trim_pafricana_DP_illumina_reads.sh** trims the both Illumina read sets.
+**pafricana_run_haslr_assembly_trimmed_illumina_reads.sh** script runs Haslr assembly program with trimmed Illumina reads as input.
+
+**P. africana Haslr Assembly (trimmed Illumina read input)**
+*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pafricana_haslr_assembly/assembly_run_2/pafricana_haslr_assembly/asm_contigs_k49_a3_c250_lr25x_b500_s3_sim0.85/asm.final.fa
+
+      Genome Size: 295988232
+      # of Contigs: 12738
+      N50: 52286
+      BUSCO:
+          Viridiplantae: C:94.1%[S:80.9%,D:13.2%],F:1.2%,M:4.7%,n:425
+          Embryophyta: C:83.4%[S:70.1%,D:13.3%],F:2.0%,M:14.6%,n:1614
+
+
+## Wengan Assembly
+Draft genome assembly created using Wengan genome assembly program.
+     
+**pafricana_run_wengan_assembly.sh** script runs Wengan assembly program with raw Illumina reads as input.
+
+**P. africana Initial Wengan Assembly**
+*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pafricana_wengan_assembly/wengan_assembly_run1/pafricana_asm_wengan.SPolished.asm.wengan.fasta
+
+      Genome Size: 570434569
+      # of Contigs: 14003
+      N50: 120153
+      BUSCO:
+          Viridiplantae: C:96.4%[S:76.9%,D:19.5%],F:1.6%,M:2.0%,n:425
+          Embryophyta: C:86.4%[S:70.8%,D:15.6%],F:1.9%,M:11.7%,n:1614
+
+## Wengan Assembly (trimmed Illumina read input)
+Draft genome assembly created using Wengan genome assembly program.
+     
+**pafricana_run_wengan_assembly_trimmed_illumina_reads.sh** script runs Wengan assembly program with trimmed Illumina reads as input.
+
+**P. africana Wengan Assembly (trimmed Illumina read input)**
+*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pafricana_wengan_assembly/wengan_assembly_run2/pafricana_asm_wengan.SPolished.asm.wengan.fasta
+
+      Genome Size: 466642697
+      # of Contigs: 10516
+      N50: 119422
+      BUSCO:
+          Viridiplantae: C:96.4%[S:77.6%,D:18.8%],F:1.6%,M:2.0%,n:425
+          Embryophyta: C:86.2%[S:70.7%,D:15.5%],F:1.9%,M:11.9%,n:1614
+
+## Masurca Hybrid Assembly
+Draft genome assembly created using Masurca genome assembly program.
+
+**config_pafricana_masura_hybrid_assembly.txt** contains the parameters to run Masurca.
+**run_masurca_hybrid_assembly_pafricana.sh** script runs Masurca assembly program with basecalled sequencing reads and raw Illumina reads as input.
+
+**P. africana Masurca Hybrid Assembly**
+*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/masurca/pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/CA.mr.41.17.15.0.02/primary.genome.scf.fasta
+
+      Genome Size: 506222239
+      # of Contigs: 3571
+      N50: 381330
+      BUSCO:
+          Viridiplantae: C:96.2%[S:80.7%,D:15.5%],F:1.2%,M:2.6%,n:425
+          Embryophyta: C:86.0%[S:71.3%,D:14.7%],F:2.0%,M:12.0%,n:1614
+
+## Masurca Hybrid Assembly (Flye enabled) PENDING
+Draft genome assembly created using Masurca genome assembly program.
+
+**config_pafricana_masura_hybrid_assembly_flye_1.txt** contains the parameters to run Masurca with the Flye parameter enabled.
+**run_masurca_hybrid_assembly_pafricana_flye_1.sh** script runs Masurca assembly program with basecalled sequencing reads and raw Illumina reads as input.
+
+**P. africana Masurca Hybrid Assembly (Flye enabled) PENDING**
+*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/masurca/pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_flye_assembly_1/
+
+      Genome Size: 
+      # of Contigs: 
+      N50: 
+      BUSCO:
+          Viridiplantae: 
+          Embryophyta: 
+
 # 3. Genome Assembly Polishing
 
 ## Nanopolish on Flye Assembly
@@ -218,6 +312,70 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
 
+## Medaka on Haslr Assembly (trimmed Illumina read input)
+
+**medaka_pafricana_haslr_assembly_trimmed_illumina_reads.sh** runs Medaka error correction program on Haslr Assembly (trimmed Illumina read input).
+
+**P. africana Haslr Assembly (trimmed Illumina read input & Medaka polishing)**
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/medaka/medaka_haslr_assembly_trimmed_illumina_reads_r941_prom_high_g303/consensus.fasta
+      
+      Genome Size: 295737460
+      # of Contigs: 12737
+      N50: 52314
+      BUSCO:
+          Viridiplantae: C:90.6%[S:81.2%,D:9.4%],F:5.2%,M:4.2%,n:425
+          Embryophyta: C:77.3%[S:68.2%,D:9.1%],F:5.0%,M:17.7%,n:1614
+
+## Medaka on Wengan Assembly (trimmed Illumina read input)
+
+**medaka_pafricana_wengan_assembly_trimmed_illumina_reads_r941_prom_high_g303.sh** runs Medaka error correction program on Wengan Assembly (trimmed Illumina read input).
+
+**P. africana Wengan Assembly (trimmed Illumina read input & Medaka polishing)**
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/medaka/medaka_pafricana_wengan_assembly_trimmed_illumina_reads_r941_prom_high_g303/consensus.fasta
+      
+      Genome Size: 434411272
+      # of Contigs: 7639
+      N50: 132405
+      BUSCO:
+          Viridiplantae: C:93.2%[S:81.4%,D:11.8%],F:4.7%,M:2.1%,n:425
+          Embryophyta: C:79.7%[S:68.4%,D:11.3%],F:4.9%,M:15.4%,n:1614
+
+## Pilon on Initial Wengan Assembly
+
+**bowtie2_index_pafricana_wengan_assembly.sh** indexes Initial Wengan Assembly.
+**bowtie2_align_pafricana_wengan_assembly.sh** aligns the Initial Wengan Asssembly to the raw Illumina reads.
+**samtools_convert_index_wengan_assembly.sh** converts the resulting SAM alignment files to BAM format, then sorts and indexes both BAM files.
+**pilon_pafricana_wengan_assembly.sh** runs Pilon error correction program on Initial Wengan Assembly.
+
+**P. africana Wengan Assembly (Pilon polishing)**
+
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pilon/pilon_pafricana_wengan_assembly/pafricana_wengan_assembly.fasta
+      
+      Genome Size: 568413172
+      # of Contigs: 14003
+      N50: 119190
+      BUSCO:
+          Viridiplantae: C:96.5%[S:77.2%,D:19.3%],F:1.6%,M:1.9%,n:425
+          Embryophyta: C:86.4%[S:70.8%,D:15.6%],F:1.9%,M:11.7%,n:1614
+
+## Pilon on Wengan Assembly (trimmed Illumina read input)
+
+**bowtie2_index_pafricana_wengan_assembly_trimmed_illumina_reads.sh** indexes Wengan Assembly (trimmed Illumina read input).
+**bowtie2_align_pafricana_wengan_assembly_trimmed_illumina_reads.sh** aligns the Wengan Asssembly (trimmed Illumina read input) to the raw Illumina reads.
+**samtools_convert_index_pafricana_wengan_assembly_trimmed_illumina_reads.sh** converts the resulting SAM alignment files to BAM format, then sorts and indexes both BAM files.
+**pilon_pafricana_wengan_assembly_trimmed_illumina_reads.sh** runs Pilon error correction program on Wengan Assembly (trimmed Illumina read input).
+
+**P. africana Wengan Assembly (trimmed Illumina read input & Pilon polishing)**
+
+    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pilon/pilon_pafricana_wengan_assembly_trimmed_illumina_reads/pafricana_wengan_assembly_trimmed_illumina_reads.fasta
+      
+      Genome Size: 465653078
+      # of Contigs: 10516
+      N50: 119028
+      BUSCO:
+          Viridiplantae: C:96.4%[S:77.6%,D:18.8%],F:1.6%,M:2.0%,n:425
+          Embryophyta: C:86.3%[S:70.8%,D:15.5%],F:2.0%,M:11.7%,n:1614
+
 # 4. Polished Genome Assembly Refinement
 ## Flye Assembly
    1. Contigs less than 3kb in length were removed from the assembly using awk command detailed in **awk_remove_3kb_contigs**
@@ -286,7 +444,7 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
 
 ## Flye Assembly (rmv contam input reads, 3 additional polishing runs, & Medaka polishing)
-   1. Purge-dups was run on the medaka error-corrected rmv input contam & 3 additional polishing runs flye assembly to further reduce the duplication of the assembly.
+   1. Purge-dups was run on the medaka error-corrected rmv input contam & 3 additional polishing runs flye assembly to reduce the duplication of the assembly.
       1. **run_purge_dups_medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303.sh** runs purge-dups with information from **config_medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303.json**. **pb.fofn** contains the path to the long-read input data.
 
 **P. africana Flye Assembly (rmv contam input reads, 3 additional polishing runs, Medaka polishing, & purgedup)**
@@ -302,3 +460,20 @@ Draft genome assembly created using Shasta genome assembly program with cleaned 
 
 **Full Quast Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1231968718  
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
+
+## Wengan Assembly (Pilon polishing)
+
+1. Purge-dups was run on the Pilon-corrected Wengan Assembly to reduce the duplication of the assembly.
+   1. **purge_dups_pilon_pafricana_wengan_assembly.sh** runs purge-dups with information from **config_pilon_pafricana_wengan_assembly.json**. **pb.fofn** contains the path to the long-read data, and **10x.fofn** contains the path to the raw Illumina reads.
+
+**P. africana Wengan Assembly (Pilon polishing & purge-dups)**
+
+     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/purge_dups_pilon_pafricana_wengan_assembly/pafricana_wengan_assembly_ispb_1/seqs/pafricana_wengan_assembly.purged.fa
+
+      Genome Size: 450162637
+      # of Contigs: 9406
+      N50: 140730
+      BUSCO:
+          Viridiplantae: C:96.2%[S:80.2%,D:16.0%],F:1.6%,M:2.2%,n:425
+          Embryophyta: C:86.1%[S:71.7%,D:14.4%],F:2.0%,M:11.9%,n:1614
+
