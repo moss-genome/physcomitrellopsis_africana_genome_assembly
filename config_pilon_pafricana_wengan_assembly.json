@@ -1,0 +1,42 @@
+{
+  "cc": {
+    "fofn": "/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/purge_dups_pilon_pafricana_wengan_assembly/pb.fofn",
+    "isdip": 1,
+    "core": 12,
+    "mem": 20000,
+    "queue": "normal",
+    "ispb": 1,
+    "skip": 0
+  },
+  "sa": {
+    "core": 12,
+    "mem": 10000,
+    "queue": "normal"
+  },
+  "busco": {
+    "core": 12,
+    "mem": 20000,
+    "queue": "long",
+    "skip": 0,
+    "lineage": "embryophyta_odb10",
+    "prefix": "pafricana_wengan_assembly_purged",
+    "tmpdir": "busco_tmp"
+  },
+  "pd": {
+    "mem": 20000,
+    "queue": "normal"
+  },
+  "gs": {
+    "mem": 10000
+  },
+  "kcp": {
+    "core": 12,
+    "mem": 30000,
+    "fofn": "/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/purge_dups_pilon_pafricana_wengan_assembly/10x.fofn",
+    "prefix": "pafricana_wengan_assembly_purged_kcm",
+    "tmpdir": "kcp_tmp",
+    "skip": 0
+  },
+  "ref": "/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_dups/purge_dups_pilon_pafricana_wengan_assembly/pafricana_wengan_assembly.fasta",
+  "out_dir": "pafricana_wengan_assembly_ispb_1"
+}
