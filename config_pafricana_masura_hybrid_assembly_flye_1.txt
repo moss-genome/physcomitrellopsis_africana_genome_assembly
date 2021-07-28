@@ -1,0 +1,18 @@
+DATA
+PE= aa 100 20 /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pafricana_haslr_assembly/DP8400020490TR_L01_28_1.fq.gz /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pafricana_haslr_assembly/DP8400020490TR_L01_28_2.fq.gz
+PE= ab 100 20 /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pafricana_haslr_assembly/DP8400020490TR_L01_117_1.fq.gz /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pafricana_haslr_assembly/DP8400020490TR_L01_117_2.fq.gz
+NANOPORE= /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pafricana_wengan_assembly/physcomitrellopsis_africana_promethion_fastq_reads-pass_rmv_contam.fastq.gz
+END
+
+PARAMETERS
+GRAPH_KMER_SIZE = auto
+USE_LINKING_MATES = 0
+LIMIT_JUMP_COVERAGE = 300
+CA_PARAMETERS =  cgwErrorRate=0.15
+KMER_COUNT_THRESHOLD = 1
+NUM_THREADS = 32
+JF_SIZE = 10000000000
+SOAP_ASSEMBLY=0
+FLYE_ASSEMBLY=1
+END
+
