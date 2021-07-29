@@ -343,7 +343,7 @@ Draft genome assembly created using Masurca genome assembly program.
 ## Pilon on Initial Wengan Assembly
 
 **bowtie2_index_pafricana_wengan_assembly.sh** indexes Initial Wengan Assembly.
-**bowtie2_align_pafricana_wengan_assembly.sh** aligns the Initial Wengan Asssembly to the raw Illumina reads.
+**bowtie2_align_pafricana_wengan_assembly.sh** aligns the Initial Wengan Assembly to the raw Illumina reads.
 **samtools_convert_index_wengan_assembly.sh** converts the resulting SAM alignment files to BAM format, then sorts and indexes both BAM files.
 **pilon_pafricana_wengan_assembly.sh** runs Pilon error correction program on Initial Wengan Assembly.
 
