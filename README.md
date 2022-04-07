@@ -1,16 +1,72 @@
 ### Physcomitrellopsis africana Genome Assembly
 Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit?usp=sharing
 
-# 1. Nanopore Sequencing.
+# 1. Sequencing.
 
-Physcomitrellopsis africana tissue sequenced using Nanopore PromethION technology.
-     Raw sequencing run data located at:
-
+## Nanopore
+Raw Sequences Location:
     /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-fast5_pass/
 
-Basecalled sequencing reads located at:
-
+Basecalled Sequences Location:
     /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-reads/
+
+Number of Reads: 16,640,338
+Average Read Length: 3,080.31
+Coverage (500,000,000 bp genome size): 102.51
+
+## Illumina
+Read Set 1:
+Number of Reads: 
+Average Read Length:
+Coverage (500,000,000 bp genome size):
+
+Location:
+/archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/
+
+
+Read Set 2:
+Number of Reads: 
+Average Read Length:
+Coverage (500,000,000 bp genome size):
+
+Location:
+/archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/
+
+
+## PhaseGenomics HiC
+Number of Reads: 
+Average Read Length:
+Coverage (500,000,000 bp genome size):
+
+Location:
+
+## Long Read Contamination Detection
+Basecalled Nanopore long reads were classified with [Centrifuge](https://ccb.jhu.edu/software/centrifuge/), read ids that returned hits were isolated into a text file, and contaminated reads were filtered from the basecalled sequences using the list of read ids
+
+Number of Reads: 14,495,188
+Average Read Length: 2,232.47
+Coverage (500,000,000 bp genome size): 64.72
+
+Location:
+/archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/filter_contaminated_raw_promethion_reads/physcomitrellopsis_africana_promethion_fastq_reads-pass_rmv_contam.fastq
+
+## Short Read Contamination Detection:
+Illumina sequencing reads were classified using Kraken to remove contaminated sequences
+
+Number of Reads:
+Average Read Length:
+Coverage (500,000,000 bp genome size): 
+
+Location:
+
+## HiC Read Contamination Detection:
+HiC sequencing reads were classified using Kraken to remove contaminated sequences
+
+Number of Reads:
+Average Read Length:
+Coverage (500,000,000 bp genome size): 
+
+Location:
 
 # 2. Genome Assembly.
 
@@ -201,36 +257,20 @@ Draft genome assembly created using Wengan genome assembly program.
           Embryophyta: C:86.2%[S:70.7%,D:15.5%],F:1.9%,M:11.9%,n:1614
 
 ## Masurca Hybrid Assembly
-Draft genome assembly created using Masurca genome assembly program.
+Genome assembly created using Masurca genome assembly program.
 
 **config_pafricana_masura_hybrid_assembly.txt** contains the parameters to run Masurca.
 **run_masurca_hybrid_assembly_pafricana.sh** script runs Masurca assembly program with basecalled sequencing reads and raw Illumina reads as input.
 
 **P. africana Masurca Hybrid Assembly**
-*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/masurca/pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/CA.mr.41.17.15.0.02/primary.genome.scf.fasta
+*     /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/masurca/pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/CA.mr.41.17.15.0.02/primary.genome.scf.fasta
 
-      Genome Size: 506222239
-      # of Contigs: 3571
-      N50: 381330
+      Genome Size: 506,222,239
+      # of Contigs: 3,571
+      N50: 381,330
       BUSCO:
-          Viridiplantae: C:96.2%[S:80.7%,D:15.5%],F:1.2%,M:2.6%,n:425
-          Embryophyta: C:86.0%[S:71.3%,D:14.7%],F:2.0%,M:12.0%,n:1614
-
-## Masurca Hybrid Assembly (Flye enabled) PENDING
-Draft genome assembly created using Masurca genome assembly program.
-
-**config_pafricana_masura_hybrid_assembly_flye_1.txt** contains the parameters to run Masurca with the Flye parameter enabled.
-**run_masurca_hybrid_assembly_pafricana_flye_1.sh** script runs Masurca assembly program with basecalled sequencing reads and raw Illumina reads as input.
-
-**P. africana Masurca Hybrid Assembly (Flye enabled) PENDING**
-*     /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/masurca/pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_flye_assembly_1/
-
-      Genome Size: 
-      # of Contigs: 
-      N50: 
-      BUSCO:
-          Viridiplantae: 
-          Embryophyta: 
+          Viridiplantae: C:96.4%[S:80.9%,D:15.5%],F:1.2%,M:2.4%,n:425
+          Embryophyta: C:86.1%[S:71.4%,D:14.7%],F:2.0%,M:11.9%,n:1614
 
 # 3. Genome Assembly Polishing
 
@@ -476,4 +516,11 @@ Draft genome assembly created using Masurca genome assembly program.
       BUSCO:
           Viridiplantae: C:96.2%[S:80.2%,D:16.0%],F:1.6%,M:2.2%,n:425
           Embryophyta: C:86.1%[S:71.7%,D:14.4%],F:2.0%,M:11.9%,n:1614
+
+## HiC Scaffolding
+
+
+
+
+
 
