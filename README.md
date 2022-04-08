@@ -4,41 +4,46 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 # 1. Sequencing.
 
 ## Nanopore
+Number of Reads: 16,640,338  
+Average Read Length: 3,080.31  
+Coverage (500,000,000 bp genome size): 102.51  
+
 Raw Sequences Location:  
     /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-fast5_pass/  
 
 Basecalled Sequences Location:
     /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-reads/  
 
-Number of Reads: 16,640,338  
-Average Read Length: 3,080.31  
-Coverage (500,000,000 bp genome size): 102.51  
 
 ## Illumina
 Read Set 1:  
-Number of Reads:  
-Average Read Length:  
-Coverage (500,000,000 bp genome size):  
+Number of Reads: 285,849,119  
+Average Read Length: 100  
+Coverage (500,000,000 bp genome size): 57.17  
 
 Location:  
-/archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/  
+/archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/DP8400020490TR_L01_28_1.fq.gz  
+/archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/DP8400020490TR_L01_28_2.fq.gz  
 
 
 Read Set 2:  
-Number of Reads:  
-Average Read Length:  
-Coverage (500,000,000 bp genome size):  
+Number of Reads: 243,647,638  
+Average Read Length: 100  
+Coverage (500,000,000 bp genome size): 48.73  
 
 Location:  
-/archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/  
-
+/archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/DP8400020490TR_L01_117_1.fq.gz  
+/archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/DP8400020490TR_L01_117_2.fq.gz  
 
 ## PhaseGenomics HiC
-Number of Reads:  
-Average Read Length:  
-Coverage (500,000,000 bp genome size):  
+Number of Reads: 72,164,138  
+Average Read Length: 150  
+Coverage (500,000,000 bp genome size): 21.65  
 
 Location:  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/hic/hic_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/fastq/5075_BKDL210029940-1a_raw_R1.fastq.gz  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/hic/hic_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/fastq/5075_BKDL210029940-1a_raw_R2.fastq.gz  
+
 
 ## Long Read Contamination Detection
 Basecalled Nanopore long reads were classified with [Centrifuge](https://ccb.jhu.edu/software/centrifuge/), read ids that returned hits were isolated into a text file, and contaminated reads were filtered from the basecalled sequences using the list of read ids.  
@@ -50,23 +55,17 @@ Coverage (500,000,000 bp genome size): 64.72
 Location:  
 /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/filter_contaminated_raw_promethion_reads/physcomitrellopsis_africana_promethion_fastq_reads-pass_rmv_contam.fastq  
 
-## Short Read Contamination Detection:
-Illumina sequencing reads were classified using Kraken to remove contaminated sequences.  
-
-Number of Reads:  
-Average Read Length:  
-Coverage (500,000,000 bp genome size):  
-
-Location:  
-
 ## HiC Read Contamination Detection:  
 HiC sequencing reads were classified using Kraken to remove contaminated sequences  
 
-Number of Reads:  
-Average Read Length:  
-Coverage (500,000,000 bp genome size):  
+Number of Reads: 26,160,651  
+Average Read Length: 150  
+Coverage (500,000,000 bp genome size): 7.85  
 
 Location:  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/kraken/kraken_hic_pafricana/5075_BKDL210029940-1a_bpv_unclassified_1.fastq  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/kraken/kraken_hic_pafricana/5075_BKDL210029940-1a_bpv_unclassified_2.fastq  
+
 
 # 2. Genome Assembly.
 
