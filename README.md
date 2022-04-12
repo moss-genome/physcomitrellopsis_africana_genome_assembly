@@ -516,7 +516,56 @@ Genome assembly created using Masurca genome assembly program.
           Viridiplantae: C:96.2%[S:80.2%,D:16.0%],F:1.6%,M:2.2%,n:425
           Embryophyta: C:86.1%[S:71.7%,D:14.4%],F:2.0%,M:11.9%,n:1614
 
-## HiC Scaffolding
+## HiC Scaffolding (Unsuccessful)
+HiC scaffolding was used to orient the Masurca Hybrid Assembly into chromosome-length scaffolds.  
+
+### Raw HiC Read:
+1. **hic_reads_align_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.sh** indexes and aligns the Masurca Hybrid Assembly.
+2. **juicer_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.sh** runs Juicer in 3 steps
+      1. Generate site positions in **pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_Sau3AI.txt**
+      2. Covert **pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_Sau3AI.txt** to **pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.chrom.sizes**
+      3. Run Juicer to generate **merged_nodups.txt** which is required for the 3ddna pipeline
+3. **3ddna_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.sh** runs the 3ddna pipeline using the **merged_nodups.txt** file generated from Juicer. Sript contains commands for all runs attempted
+4. Download **.final.hic** and **.final.assembly** files and visualize HiC map with Juicebox
+
+### Rmv Contam HiC Read:
+1. **hic_rmv_contam_reads_align_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.sh** indexes and aligns the Masurca Hybrid Assembly.
+2. **juicer_hic_rmv_contam_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.sh** runs Juicer in 3 steps
+      1. Generate site positions in **hic_rmv_contam_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_Sau3AI.txt**
+      2. Covert **hic_rmv_contam_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_Sau3AI.txt** to **hic_rmv_contam_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.chrom.sizes**
+      3. Run Juicer to generate **merged_nodups.txt** which is required for the 3ddna pipeline
+3. **3ddna_hic_rmv_contam_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.sh** runs the 3ddna pipeline using the **merged_nodups.txt** file generated from Juicer. Sript contains commands for all runs attempted
+4. Download **.final.hic** and **.final.assembly** files and visualize HiC map with Juicebox
+
+### 3ddna Raw HiC Read Map Output
+1. Run 1
+      - --editor-repeat-coverage 4
+![alt text](https://github.com/moss-genome/physcomitrellopsis_africana_genome_assembly/blob/master/3ddna_raw_hic_read_run1.png "Raw HiC Read Run 1")
+2. Run 2
+      - Default Parameters
+![alt text](https://github.com/moss-genome/physcomitrellopsis_africana_genome_assembly/blob/master/3ddna_raw_hic_read_run2.png "Raw HiC Read Run 2")
+3. Run 3
+      - --splitter-coarse-resolution 50000
+![alt text](https://github.com/moss-genome/physcomitrellopsis_africana_genome_assembly/blob/master/3ddna_raw_hic_read_run3.png "Raw HiC Read Run 3")
+
+### 3ddna Rmv Contam HiC Read Map Output
+1. Run 1
+      - --editor-repeat-coverage 1
+![alt text](https://github.com/moss-genome/physcomitrellopsis_africana_genome_assembly/blob/master/3ddna_rmv_contam_read_run1.png "Rmv Contam Read Run 1")
+2. Run 2
+      - --editor-repeat-coverage 4
+![alt text](https://github.com/moss-genome/physcomitrellopsis_africana_genome_assembly/blob/master/3ddna_rmv_contam_read_run2.png "Rmv Contam Read Run 2")
+3. Run 3
+      - --editor-repeat-coverage 4 
+      - --splitter-coarse-resolution 250000
+![alt text](https://github.com/moss-genome/physcomitrellopsis_africana_genome_assembly/blob/master/3ddna_rmv_contam_read_run3.png "Rmv Contam Read Run 3")
+      
+
+
+
+
+
+
 
 
 
