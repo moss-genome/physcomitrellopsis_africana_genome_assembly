@@ -255,7 +255,7 @@ Draft genome assembly created using Wengan genome assembly program.
           Viridiplantae: C:96.4%[S:77.6%,D:18.8%],F:1.6%,M:2.0%,n:425
           Embryophyta: C:86.2%[S:70.7%,D:15.5%],F:1.9%,M:11.9%,n:1614
 
-## Masurca Hybrid Assembly
+## Masurca Hybrid Assembly (BEST ASSEMBLY)
 Genome assembly created using Masurca genome assembly program.
 
 **config_pafricana_masura_hybrid_assembly.txt** contains the parameters to run Masurca.
