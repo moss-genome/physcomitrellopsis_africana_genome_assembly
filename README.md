@@ -356,7 +356,7 @@ Genome assembly created using Masurca genome assembly program.
 **medaka_pafricana_haslr_assembly_trimmed_illumina_reads.sh** runs Medaka error correction program on Haslr Assembly (trimmed Illumina read input).
 
 **P. africana Haslr Assembly (trimmed Illumina read input & Medaka polishing)**
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/medaka/medaka_haslr_assembly_trimmed_illumina_reads_r941_prom_high_g303/consensus.fasta
+    /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/medaka/medaka_haslr_assembly_trimmed_illumina_reads_r941_prom_high_g303/consensus.fasta
       
       Genome Size: 295737460
       # of Contigs: 12737
@@ -370,7 +370,7 @@ Genome assembly created using Masurca genome assembly program.
 **medaka_pafricana_wengan_assembly_trimmed_illumina_reads_r941_prom_high_g303.sh** runs Medaka error correction program on Wengan Assembly (trimmed Illumina read input).
 
 **P. africana Wengan Assembly (trimmed Illumina read input & Medaka polishing)**
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/medaka/medaka_pafricana_wengan_assembly_trimmed_illumina_reads_r941_prom_high_g303/consensus.fasta
+    /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/medaka/medaka_pafricana_wengan_assembly_trimmed_illumina_reads_r941_prom_high_g303/consensus.fasta
       
       Genome Size: 434411272
       # of Contigs: 7639
@@ -388,7 +388,7 @@ Genome assembly created using Masurca genome assembly program.
 
 **P. africana Wengan Assembly (Pilon polishing)**
 
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pilon/pilon_pafricana_wengan_assembly/pafricana_wengan_assembly.fasta
+    /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pilon/pilon_pafricana_wengan_assembly/pafricana_wengan_assembly.fasta
       
       Genome Size: 568413172
       # of Contigs: 14003
@@ -406,7 +406,7 @@ Genome assembly created using Masurca genome assembly program.
 
 **P. africana Wengan Assembly (trimmed Illumina read input & Pilon polishing)**
 
-    /projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pilon/pilon_pafricana_wengan_assembly_trimmed_illumina_reads/pafricana_wengan_assembly_trimmed_illumina_reads.fasta
+    /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pilon/pilon_pafricana_wengan_assembly_trimmed_illumina_reads/pafricana_wengan_assembly_trimmed_illumina_reads.fasta
       
       Genome Size: 465653078
       # of Contigs: 10516
@@ -414,6 +414,24 @@ Genome assembly created using Masurca genome assembly program.
       BUSCO:
           Viridiplantae: C:96.4%[S:77.6%,D:18.8%],F:1.6%,M:2.0%,n:425
           Embryophyta: C:86.3%[S:70.8%,D:15.5%],F:2.0%,M:11.7%,n:1614
+
+## Pilon on Masurca Hybrid Assembly
+
+**bowtie2_index_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_DP.sh** indexes Masurca Hybrid Assembly.
+**bowtie2_align_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_DP.sh** aligns the Masurca Hybrid Assembly to the raw Illumina reads.
+**samtools_convert_index_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_DP_alignment.sh** converts the resulting SAM alignment files to BAM format, then sorts and indexes both BAM files.
+**pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_DP.sh** runs Pilon error correction program on Masurca Hybrid Assembly.
+
+**P. africana Masurca Hybrid Assembly (Pilon polishing)**
+
+    /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/pilon/pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_DP.fasta
+      
+      Genome Size: 507,096,076
+      # of Contigs: 3,590
+      N50: 378,429
+      BUSCO:
+          Viridiplantae: C:96.4%[S:80.9%,D:15.5%],F:1.2%,M:2.4%,n:425
+          Embryophyta: C:86.1%[S:71.4%,D:14.7%],F:2.0%,M:11.9%,n:1614
 
 # 4. Polished Genome Assembly Refinement
 ## Flye Assembly
@@ -483,7 +501,7 @@ Genome assembly created using Masurca genome assembly program.
 **Full BUSCO Stats:** https://docs.google.com/spreadsheets/d/1okPKCprWck4fmQgsz3Jt4654wdC38Elk3v131jLbmFw/edit#gid=1742671984
 
 ## Flye Assembly (rmv contam input reads, 3 additional polishing runs, & Medaka polishing)
-   1. Purge-dups was run on the medaka error-corrected rmv input contam & 3 additional polishing runs flye assembly to reduce the duplication of the assembly.
+   1. Purge-dups was run on the medaka error-corrected rmv input contam & 3 additional polishing runs flye assembly to reduce duplication of assembly.
       1. **run_purge_dups_medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303.sh** runs purge-dups with information from **config_medaka_flye_assembly_rmv_contam_input_rerun_3_polishing_runs_rerun_r941_prom_high_g303.json**. **pb.fofn** contains the path to the long-read input data.
 
 **P. africana Flye Assembly (rmv contam input reads, 3 additional polishing runs, Medaka polishing, & purgedup)**
@@ -502,7 +520,7 @@ Genome assembly created using Masurca genome assembly program.
 
 ## Wengan Assembly (Pilon polishing)
 
-1. Purge-dups was run on the Pilon-corrected Wengan Assembly to reduce the duplication of the assembly.
+1. Purge-dups was run on the Pilon-corrected Wengan Assembly to reduce duplication of assembly.
    1. **purge_dups_pilon_pafricana_wengan_assembly.sh** runs purge-dups with information from **config_pilon_pafricana_wengan_assembly.json**. **pb.fofn** contains the path to the long-read data, and **10x.fofn** contains the path to the raw Illumina reads.
 
 **P. africana Wengan Assembly (Pilon polishing & purge-dups)**
@@ -515,6 +533,23 @@ Genome assembly created using Masurca genome assembly program.
       BUSCO:
           Viridiplantae: C:96.2%[S:80.2%,D:16.0%],F:1.6%,M:2.2%,n:425
           Embryophyta: C:86.1%[S:71.7%,D:14.4%],F:2.0%,M:11.9%,n:1614
+
+## Masurca Hybrid Assembly (Pilon polishing)
+
+1. Purge Haplotigs was run on the Pilon-corrected Masurca Hybrid assembly to reduce duplication of assembly
+   1. **minimap2_alignment_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.sh** aligns the Masurca Hybrid Assembly (Pilon polishing) to input Nanopore long-read data and indexes resulting BAM alignment file using Samtools
+   1. **purge_haplotigs_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.sh** runs the Purge Haplotigs pipeline on the Masurca Hybrid Assembly (Pilon polishing) in three steps. **pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina.reads.sorted.bam.histogram.png** is a read-depth histogram generated by the first step that was used to select low cutoff, midpoint, and high cutoff values in second step
+   
+**P. africana Masurca Hybrid Assembly (Pilon polishing & purge-haps)**
+
+     /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_haplotigs/purge_haps_pilon_masurca/purgehap_run9/curated.fasta
+
+      Genome Size: 502,343,981
+      # of Contigs: 3,237
+      N50: 382,253
+      BUSCO:
+          Viridiplantae: C:96.4%[S:80.9%,D:15.5%],F:1.2%,M:2.4%,n:425
+          Embryophyta: C:86.1%[S:71.4%,D:14.7%],F:2.0%,M:11.9%,n:1614
 
 ## HiC Scaffolding (Unsuccessful)
 HiC scaffolding was used to orient the Masurca Hybrid Assembly into chromosome-length scaffolds.  
@@ -560,6 +595,27 @@ HiC scaffolding was used to orient the Masurca Hybrid Assembly into chromosome-l
       - --splitter-coarse-resolution 250000
 ![alt text](https://github.com/moss-genome/physcomitrellopsis_africana_genome_assembly/blob/master/3ddna_rmv_contam_read_run3.png "Rmv Contam Read Run 3")
       
+      
+# 5. Genome Annotation  
+
+## Sickle Trimming Input Reads
+1. **sickle_pafricana_RNA_reads.sh** trims P. africana RNA reads
+
+**Trimming Summary:**  
+Total input FastQ records: 73165112 (36582556 pairs)  
+FastQ paired records kept: 60583696 (30291848 pairs)  
+FastQ paired records discarded: 2775514 (1387757 pairs)  
+
+Location:  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/reads/trimmed_CL100118899_L01_573_1.fastq  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/reads/trimmed_CL100118899_L01_573_2.fastq  
+
+## Repeat Modeler
+1. **create_db_purgehap_pilon_masurca.sh** creates Repeat Modeler database of Masurca Hybrid Assembly (Pilon polishing & purge-haps)
+1. **repeat_modeler_pafricana_purgehap_pilon_masurca.sh** runs Repeat Modeler with LTR Structural Analysis enabled
+
+## Repeat Masker (IN PROGRESS)
+1. **repeat_masker_purgehap_pilon_masurca.sh** runs Repeat Masker on Masurca Hybrid Assembly (Pilon polishing & purge-haps) with repeat library generated in previous step
 
 
 
