@@ -614,10 +614,68 @@ Location:
 1. **create_db_purgehap_pilon_masurca.sh** creates Repeat Modeler database of Masurca Hybrid Assembly (Pilon polishing & purge-haps)
 1. **repeat_modeler_pafricana_purgehap_pilon_masurca.sh** runs Repeat Modeler with LTR Structural Analysis enabled
 
-## Repeat Masker (IN PROGRESS)
+## Repeat Masker  
 1. **repeat_masker_purgehap_pilon_masurca.sh** runs Repeat Masker on Masurca Hybrid Assembly (Pilon polishing & purge-haps) with repeat library generated in previous step
 
+Output: Masked Masurca Hybrid Assembly (Pilon polishing & purge-haps)  
 
+Masked Genome Stats:  
+bases masked:  252,254,513 bp (50.22 %)  
+Detailed stats in **pilon_purgehap_masurca_hybrid_assembly.tbl**
+
+## BRAKER
+Run BRAKER with RNA alignment & protein evidence
+
+1. **hisat2_index.sh** indexes the Masurca Hybrid Assembly (Pilon polishing & purge-haps)
+1. **hisat2_align.sh** aligns the Masurca Hybrid Assembly (Pilon polishing & purge-haps) to RNA-seq transcriptome reads
+1. **braker_pafricana_purgehap_pilon_masurca_rna_only.sh** runs BRAKER with RNA alignment evidence
+1. **braker_pafricana_purgehap_pilon_masurca_protein.sh** runs BRAKER with protein evidence
+
+BRAKER RNA-seq Alignment Output:  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/braker/braker_rna_only/  
+Total Protein Sequences: 64,020  
+BUSCO: 
+
+BRAKER Protein Evidence Output:  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/braker/braker_protein/  
+Total Protein Sequences: 37,822  
+BUSCO:  
+Viridiplantae: C:46.1%[S:30.1%,D:16.0%],F:5.6%,M:48.3%,n:425  
+Embryophyta: C:22.6%[S:15.3%,D:7.3%],F:2.5%,M:74.9%,n:1614  
+
+##TSEBRA
+Select transcripts from BRAKER RNA alignment & protein evidence runs to create refined dataset
+
+**tsebra.sh** runs TSEBRA with BRAKER RNA alignment & protein evidence
+
+TSEBRA Output:
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/tsebra/tsebra_braker_purgehap_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/gfacs_o/genes.fasta.faa  
+BUSCO:  
+Viridiplantae: C:91.3%[S:76.2%,D:15.1%],F:1.9%,M:6.8%,n:425  
+Embryophyta: C:79.0%[S:65.4%,D:13.6%],F:3.5%,M:17.5%,n:1614  \
+
+gFACs Stats:
+Number of genes:	46525  
+Number of monoexonic genes:	23919  
+Number of multiexonic genes:	22606  
+
+## Interproscan  
+Reduce number of monoexonic genes in annotation  
+
+gfacs_isolate_mono.sh isolates and filters monoexonic genes that are incomplete or have no start & stop codons.  
+gfacs_isolate_multi.sh isolates multiexonic gene output.  
+interproscan.sh aligns the monoexonic genes to the pfam database and keeps only unique genes that align to the database.  
+gfacs_combined_mono_interproscan_filter_multi.sh combines gene tables from interproscan filtered monoexonic genes and isolated multiexonic gene output, then generates a gFACs run using the combined gene table.  
+
+Interproscan Filtering Output:  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/interproscan/interproscan_tsebra_braker_purgehap_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/gfacs_o/genes.fasta.faa  
+Number of genes:	37201  
+Number of monoexonic genes:	14595  
+Number of multiexonic genes:	22606  
+
+BUSCO:  
+Viridiplantae: C:90.3%[S:75.5%,D:14.8%],F:1.9%,M:7.8%,n:425  
+Embryophyta: C:78.4%[S:65.0%,D:13.4%],F:3.2%,M:18.4%,n:1614  
 
 
 
