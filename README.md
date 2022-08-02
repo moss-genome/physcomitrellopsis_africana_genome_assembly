@@ -635,6 +635,8 @@ BRAKER RNA-seq Alignment Output:
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/braker/braker_rna_only/  
 Total Protein Sequences: 64,020  
 BUSCO: 
+Viridiplantae: C:95.8%[S:72.5%,D:23.3%],F:2.4%,M:1.8%,n:425  
+Embryophyta: C:84.0%[S:61.9%,D:22.1%],F:3.8%,M:12.2%,n:1614  
 
 BRAKER Protein Evidence Output:  
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/braker/braker_protein/  
