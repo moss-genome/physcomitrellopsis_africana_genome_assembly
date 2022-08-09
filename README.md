@@ -662,14 +662,14 @@ Number of monoexonic genes:	23919
 Number of multiexonic genes:	22606  
 
 ## Interproscan  
-Reduce number of monoexonic genes in annotation  
+Reduce number of monoexonic genes in annotation (Ran for TSEBRA & BRAKER RNA-only Protein Sets)  
 
 gfacs_isolate_mono.sh isolates and filters monoexonic genes that are incomplete or have no start & stop codons.  
 gfacs_isolate_multi.sh isolates multiexonic gene output.  
 interproscan.sh aligns the monoexonic genes to the pfam database and keeps only unique genes that align to the database.  
 gfacs_combined_mono_interproscan_filter_multi.sh combines gene tables from interproscan filtered monoexonic genes and isolated multiexonic gene output, then generates a gFACs run using the combined gene table.  
 
-Interproscan Filtering Output:  
+Interproscan Filtering TSEBRA BRAKER Output:  
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/interproscan/interproscan_tsebra_braker_purgehap_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/gfacs_o/genes.fasta.faa  
 Number of genes:	37201  
 Number of monoexonic genes:	14595  
@@ -678,6 +678,17 @@ Number of multiexonic genes:	22606
 BUSCO:  
 Viridiplantae: C:90.3%[S:75.5%,D:14.8%],F:1.9%,M:7.8%,n:425  
 Embryophyta: C:78.4%[S:65.0%,D:13.4%],F:3.2%,M:18.4%,n:1614  
+
+Interproscan Filtering BRAKER RNA-only Output:  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/interproscan/interproscan_braker_rna_only_purgehap_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/gfacs_o/genes.fasta.faa  
+STATS:
+Number of genes:	54360
+Number of monoexonic genes:	12653
+Number of multiexonic genes:	41707
+
+BUSCO:  
+Viridiplantae: C:92.5%[S:79.3%,D:13.2%],F:4.0%,M:3.5%,n:425  
+Embryophyta: C:80.8%[S:67.8%,D:13.0%],F:4.2%,M:15.0%,n:1614  
 
 
 
