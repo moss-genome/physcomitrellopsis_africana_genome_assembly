@@ -278,9 +278,9 @@ Genome assembly created using Masurca genome assembly program.
 ```
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/yang_assembly/5075.fa
 
-Genome Size: 506,222,239  
-# of Contigs: 3,571  
-N50: 381,330  
+Genome Size: 473,921,092  
+# of Contigs: 22,580  
+N50: 301,523  
 BUSCO:  
 Viridiplantae: C:94.8%[S:81.4%,D:13.4%],F:1.4%,M:3.8%,n:425  
 Embryophyta: C:85.1%[S:71.3%,D:13.8%],F:2.1%,M:12.8%,n:1614  
