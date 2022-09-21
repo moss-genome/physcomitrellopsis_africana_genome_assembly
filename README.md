@@ -255,14 +255,15 @@ Draft genome assembly created using Wengan genome assembly program.
           Viridiplantae: C:96.4%[S:77.6%,D:18.8%],F:1.6%,M:2.0%,n:425
           Embryophyta: C:86.2%[S:70.7%,D:15.5%],F:1.9%,M:11.9%,n:1614
 
-## Masurca Hybrid Assembly (BEST ASSEMBLY)
+## Masurca Hybrid Assembly
 Genome assembly created using Masurca genome assembly program.
 
 **config_pafricana_masura_hybrid_assembly.txt** contains the parameters to run Masurca.
 **run_masurca_hybrid_assembly_pafricana.sh** script runs Masurca assembly program with basecalled sequencing reads and raw Illumina reads as input.
 
 **P. africana Masurca Hybrid Assembly**
-*     /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/masurca/pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/CA.mr.41.17.15.0.02/primary.genome.scf.fasta
+```
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/masurca/pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/CA.mr.41.17.15.0.02/primary.genome.scf.fasta
 
       Genome Size: 506,222,239  
       # of Contigs: 3,571  
@@ -270,7 +271,20 @@ Genome assembly created using Masurca genome assembly program.
       BUSCO:  
           Viridiplantae: C:96.4%[S:80.9%,D:15.5%],F:1.2%,M:2.4%,n:425  
           Embryophyta: C:86.1%[S:71.4%,D:14.7%],F:2.0%,M:11.9%,n:1614  
+```
+## Yang Assembly
 
+**P. africana Yang Assembly**
+```
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/yang_assembly/5075.fa
+
+Genome Size: 506,222,239  
+# of Contigs: 3,571  
+N50: 381,330  
+BUSCO:  
+Viridiplantae: C:94.8%[S:81.4%,D:13.4%],F:1.4%,M:3.8%,n:425  
+Embryophyta: C:85.1%[S:71.3%,D:13.8%],F:2.1%,M:12.8%,n:1614  
+```
 # 3. Genome Assembly Polishing
 
 ## Nanopolish on Flye Assembly
