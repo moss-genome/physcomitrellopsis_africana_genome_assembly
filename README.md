@@ -600,7 +600,7 @@ HiC scaffolding was used to orient the Masurca Hybrid Assembly into chromosome-l
 
 ## Sickle Trimming Input Reads
 1. **sickle_pafricana_RNA_reads.sh** trims P. africana RNA reads
-
+```
 **Trimming Summary:**  
 Total input FastQ records: 73165112 (36582556 pairs)  
 FastQ paired records kept: 60583696 (30291848 pairs)  
@@ -609,19 +609,30 @@ FastQ paired records discarded: 2775514 (1387757 pairs)
 Location:  
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/reads/trimmed_CL100118899_L01_573_1.fastq  
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/reads/trimmed_CL100118899_L01_573_2.fastq  
-
+```
 ## Repeat Modeler
 1. **create_db_purgehap_pilon_masurca.sh** creates Repeat Modeler database of Masurca Hybrid Assembly (Pilon polishing & purge-haps)
 1. **repeat_modeler_pafricana_purgehap_pilon_masurca.sh** runs Repeat Modeler with LTR Structural Analysis enabled
+```
+Output:
+Masurca Hybrid Assembly (Pilon polishing & purge-haps)
+Location:
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/repeat_modeler/RM_2109530.SatJun250415192022/consensi.fa
 
+Number of Sequences: 580
+```
 ## Repeat Masker  
 1. **repeat_masker_purgehap_pilon_masurca.sh** runs Repeat Masker on Masurca Hybrid Assembly (Pilon polishing & purge-haps) with repeat library generated in previous step
 
+```
 Output: Masked Masurca Hybrid Assembly (Pilon polishing & purge-haps)  
+Location:
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/purge_haplotigs/purge_haps_pilon_masurca/purgehap_run9/curated.fasta.masked
 
 Masked Genome Stats:  
 bases masked:  252,254,513 bp (50.22 %)  
 Detailed stats in **pilon_purgehap_masurca_hybrid_assembly.tbl**
+```
 
 ## BRAKER & gFACs
 Run seperate BRAKER runs with RNA alignment & protein evidence, and gFACs with basic unique genes filter
