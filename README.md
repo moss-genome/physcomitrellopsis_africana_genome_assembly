@@ -623,72 +623,122 @@ Masked Genome Stats:
 bases masked:  252,254,513 bp (50.22 %)  
 Detailed stats in **pilon_purgehap_masurca_hybrid_assembly.tbl**
 
-## BRAKER
-Run BRAKER with RNA alignment & protein evidence
+## BRAKER & gFACs
+Run seperate BRAKER runs with RNA alignment & protein evidence, and gFACs with basic unique genes filter
 
 1. **hisat2_index.sh** indexes the Masurca Hybrid Assembly (Pilon polishing & purge-haps)
 1. **hisat2_align.sh** aligns the Masurca Hybrid Assembly (Pilon polishing & purge-haps) to RNA-seq transcriptome reads
 1. **braker_pafricana_purgehap_pilon_masurca_rna_only.sh** runs BRAKER with RNA alignment evidence
+1. **gfacs_pafricana_purgehap_pilon_masurca_rna_only_rerun.sh** runs gFACs with unique genes filter enabled to generate refined output for BRAKER RNA alignment evidence run
 1. **braker_pafricana_purgehap_pilon_masurca_protein.sh** runs BRAKER with protein evidence
 
+```
 BRAKER RNA-seq Alignment Output:  
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/braker/braker_rna_only/  
+
 Total Protein Sequences: 64,020  
 BUSCO: 
 Viridiplantae: C:95.8%[S:72.5%,D:23.3%],F:2.4%,M:1.8%,n:425  
 Embryophyta: C:84.0%[S:61.9%,D:22.1%],F:3.8%,M:12.2%,n:1614  
+```
+```
+gFACs Unique Gene Filter on BRAKER RNA-Seq Alignment Output:
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/gfacs/gfacs_uniquegenes_filter_braker_rna_only_purgehap_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/gfacs_o/
 
+STATS:
+Number of genes:	60917
+Number of monoexonic genes:	20885
+Number of multiexonic genes:	40032
+
+Viridiplantae: C:95.8%[S:80.5%,D:15.3%],F:2.4%,M:1.8%,n:425
+Embryophyta: C:83.9%[S:69.0%,D:14.9%],F:3.8%,M:12.3%,n:1614
+```
+```
 BRAKER Protein Evidence Output:  
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/braker/braker_protein/  
 Total Protein Sequences: 37,822  
 BUSCO:  
 Viridiplantae: C:46.1%[S:30.1%,D:16.0%],F:5.6%,M:48.3%,n:425  
 Embryophyta: C:22.6%[S:15.3%,D:7.3%],F:2.5%,M:74.9%,n:1614  
+```
 
-##TSEBRA
-Select transcripts from BRAKER RNA alignment & protein evidence runs to create refined dataset
 
-**tsebra.sh** runs TSEBRA with BRAKER RNA alignment & protein evidence
 
+## TSEBRA
+Run TSEBRA to select transcripts from BRAKER RNA alignment & BRAKER protein evidence runs to create refined dataset.  
+
+**tsebra.sh** runs TSEBRA with BRAKER RNA alignment & protein evidence. **gfacs_tsebra.sh** runs gFACs with unique gene filter enabled on the TSEBRA output gtf file.  
+```
 TSEBRA Output:
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/tsebra/tsebra_braker_purgehap_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/gfacs_o/genes.fasta.faa  
-BUSCO:  
-Viridiplantae: C:91.3%[S:76.2%,D:15.1%],F:1.9%,M:6.8%,n:425  
-Embryophyta: C:79.0%[S:65.4%,D:13.6%],F:3.5%,M:17.5%,n:1614  \
 
 gFACs Stats:
 Number of genes:	46525  
 Number of monoexonic genes:	23919  
 Number of multiexonic genes:	22606  
 
+BUSCO:  
+Viridiplantae: C:91.3%[S:76.2%,D:15.1%],F:1.9%,M:6.8%,n:425
+Embryophyta: C:79.0%[S:65.4%,D:13.6%],F:3.5%,M:17.5%,n:1614
+```
 ## Interproscan  
-Reduce number of monoexonic genes in annotation (Ran for TSEBRA & BRAKER RNA-only Protein Sets)  
+Reduce number of monoexonic genes in annotation (Ran seperately for TSEBRA & BRAKER RNA-only Protein Sets)  
 
-gfacs_isolate_mono.sh isolates and filters monoexonic genes that are incomplete or have no start & stop codons.  
-gfacs_isolate_multi.sh isolates multiexonic gene output.  
-interproscan.sh aligns the monoexonic genes to the pfam database and keeps only unique genes that align to the database.  
-gfacs_combined_mono_interproscan_filter_multi.sh combines gene tables from interproscan filtered monoexonic genes and isolated multiexonic gene output, then generates a gFACs run using the combined gene table.  
+* **gfacs_isolate_mono.sh** isolates and filters monoexonic genes that are incomplete or have no start & stop codons.  
+* **gfacs_isolate_multi.sh** isolates multiexonic gene output.  
+* **interproscan.sh** aligns the monoexonic genes to the pfam database and keeps only unique genes that align to the database.  
+**gfacs_combined_mono_interproscan_filter_multi.sh** combines gene tables from interproscan filtered monoexonic genes and isolated multiexonic gene output, then generates a gFACs run using the combined gene table.  
 
+```
 Interproscan Filtering TSEBRA BRAKER Output:  
 /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/interproscan/interproscan_tsebra_braker_purgehap_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/gfacs_o/genes.fasta.faa  
-Number of genes:	37201  
-Number of monoexonic genes:	14595  
-Number of multiexonic genes:	22606  
+Number of genes: 37201  
+Number of monoexonic genes: 14595  
+Number of multiexonic genes: 22606  
 
 BUSCO:  
 Viridiplantae: C:90.3%[S:75.5%,D:14.8%],F:1.9%,M:7.8%,n:425  
 Embryophyta: C:78.4%[S:65.0%,D:13.4%],F:3.2%,M:18.4%,n:1614  
+```
 
+```
 Interproscan Filtering BRAKER RNA-only Output:  
-/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/interproscan/interproscan_braker_rna_only_purgehap_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/gfacs_o/genes.fasta.faa  
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/interproscan/interproscan_braker_rna_only_purgehap_pilon_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina_rerun/gfacs_o/genes.fasta.faa  
+
 STATS:
-Number of genes:	54360
-Number of monoexonic genes:	12653
-Number of multiexonic genes:	41707
+Number of genes: 52728
+Number of monoexonic genes: 12696
+Number of multiexonic genes: 40032
 
 BUSCO:  
-Viridiplantae: C:92.5%[S:79.3%,D:13.2%],F:4.0%,M:3.5%,n:425  
-Embryophyta: C:80.8%[S:67.8%,D:13.0%],F:4.2%,M:15.0%,n:1614  
+Viridiplantae: C:94.9%[S:79.8%,D:15.1%],F:2.4%,M:2.7%,n:425  
+Embryophyta: C:83.4%[S:68.7%,D:14.7%],F:3.7%,M:12.9%,n:1614  
+```
+## OrthoFinder
+Performed OrthoFinder analysis on Interproscan-filtered BRAKER RNA-only gene set alongside Physcomitrium patens protein-coded gene set acquired from RefSeq & UCONN Funaria hygrometrica protein sets acquired from Funaria manuscript: https://www.biorxiv.org/content/10.1101/2022.05.17.492078v1.full
+
+**orthofinder.sh** runs OrthoFinder with **fasta** directory containing input protein data.  
+
+### Overall Statistics  
+```
+Number of species	3
+Number of genes	137165
+Number of genes in orthogroups	111541
+Number of unassigned genes	25624
+Percentage of genes in orthogroups	81.3
+Percentage of unassigned genes	18.7
+Number of orthogroups	20776
+Number of species-specific orthogroups	4544
+Number of genes in species-specific orthogroups	22945
+Percentage of genes in species-specific orthogroups	16.7
+Mean orthogroup size	5.4
+Median orthogroup size	4.0
+G50 (assigned genes)	6
+G50 (all genes)	5
+O50 (assigned genes)	5028
+O50 (all genes)	7288
+Number of orthogroups with all species present	13538
+```
 
 
 
