@@ -726,7 +726,7 @@ Viridiplantae: C:94.9%[S:79.8%,D:15.1%],F:2.4%,M:2.7%,n:425
 Embryophyta: C:83.4%[S:68.7%,D:14.7%],F:3.7%,M:12.9%,n:1614  
 ```
 ## OrthoFinder
-Performed OrthoFinder analysis on Interproscan-filtered BRAKER RNA-only gene set alongside Physcomitrium patens protein-coded gene set acquired from RefSeq & UCONN Funaria hygrometrica protein sets acquired from Funaria manuscript: https://www.biorxiv.org/content/10.1101/2022.05.17.492078v1.full
+Performed OrthoFinder analysis on Interproscan-filtered BRAKER RNA-only gene set alongside Physcomitrium patens protein-coded gene set acquired from RefSeq & UCONN Funaria hygrometrica protein set acquired from Funaria manuscript: https://www.biorxiv.org/content/10.1101/2022.05.17.492078v1.full
 
 **orthofinder.sh** runs OrthoFinder with **fasta** directory containing input protein data.  
 
