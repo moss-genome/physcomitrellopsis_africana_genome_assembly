@@ -765,6 +765,55 @@ O50 (all genes)	7288
 Number of orthogroups with all species present	13538
 ```
 
+## EnTAP
+Run EnTAP to create functional annotation of Interproscan Filtering BRAKER RNA-only genes.  
+
+**entap.sh** runs EnTAP functional annotation pipeline on Interproscan Filtering BRAKER RNA-only output genes.  
+
+**EnTAP Interproscan Filtering BRAKER RNA-only Output:**  
+```
+Location:
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/entap/entap_interproscan_braker_rna_only_rerun/entap_outfiles/
+```
+EnTAP Results Spreadsheet:  
+https://docs.google.com/spreadsheets/d/1m3xRsHkgCzuvPxTZnzwUUZJVdFb36ss9DS-Dqz5lYZg/edit?usp=sharing
+
+
+## Annotation Classification Analysis & Filtering
+Identify & filter potentially contaminant genes based on EggNog Taxonomy Scope classifications (Archea, Bacteria, and Fungi classifications) from EnTAP results.  
+
+1. **filter.sh** isolates potentially contaminant genes from initial gFACs annotation gene table using list of potentially contaminant gene ids **pafricana_entap_rerun_abf_gene_ids.txt** identified from [EnTAP results spreadsheet](https://docs.google.com/spreadsheets/d/1m3xRsHkgCzuvPxTZnzwUUZJVdFb36ss9DS-Dqz5lYZg/edit?usp=sharing). Results located in **pafricana_entap_rerun_abf_gene_table.txt**.  
+2. **gfacs_pafricana_entap_rerun_abf_gene_table.sh** generates new gFACs run for potentially contaminant genes using **pafricana_entap_rerun_abf_gene_table.txt**. Resulting **pafricana_entap_rerun_abf_genes_only.gtf** file uploaded to [spreadsheet](https://docs.google.com/spreadsheets/d/1g3vvr49-mtxIqo7NC9SIVK3ojTu81_ptEvXAMcN6fck/edit#gid=1122410993).  
+3. The number of potentially contaminant genes per scaffold was calculated and each scaffold was sorted from greatest to least genes contained on spreadsheet. Scaffolds > 10kb in length composed of >= 70% contaminant genes and scaffolds < 10kb composed of >= 50% contaminant genes were selected for filtering. Scaffolds selected for filtering are marked in red on the [spreadsheet](https://docs.google.com/spreadsheets/d/1g3vvr49-mtxIqo7NC9SIVK3ojTu81_ptEvXAMcN6fck/edit#gid=2099862844). Scaffold ids selected for removal are listed in **scaffold_ids_for_removal.txt**.  
+4. **filter_scaffolds.py** filters potentially contaminant scaffolds from **P. africana Masurca Hybrid Assembly (Pilon polishing & purge-haps)** using ids listed in **scaffold_ids_for_removal.txt**. New assembly file is called **pafricana_assembly_filter_abf_scaf.fasta**.
+5. Potentially contaminant genes were filtered from annotation gtf file and saved in new file **pafricana_assembly_filter_abf_scaf_annotation_out.gtf**. **gfacs_pafricana_assembly_filter_abf_scaf_annotation.sh** generates gFACs run for filtered assembly and annotation.
+
+**P. africana Masurca Hybrid Assembly (Pilon polishing, purge-haps & EnTAP Classification Analysis Filtering)**  
+```
+Assembly Location:
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/analysis/entap_rerun/pafricana_assembly_filter_abf_scaf.fasta
+
+Genome Size: 440,554,637
+# of Contigs: 2,406
+N50: 362,882
+BUSCO:
+      V: C:96.0%[S:82.1%,D:13.9%],F:1.4%,M:2.6%,n:425
+      E: C:85.8%[S:71.7%,D:14.1%],F:2.1%,M:12.1%,n:1614
+```
+**Annotation:**  
+```
+Annotation Location:
+/core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/annotation/analysis/entap_rerun/gfacs_pafricana_assembly_filter_abf_scaf_o/
+
+STATS:
+Number of genes: 23,561
+Number of monoexonic genes: 1,708
+Number of multiexonic genes: 21,853
+
+BUSCO:
+      V: C:93.8%[S:80.2%,D:13.6%],F:2.8%,M:3.4%,n:425
+      E: C:82.8%[S:68.5%,D:14.3%],F:4.0%,M:13.2%,n:1614
+```
 
 
 
