@@ -3,7 +3,7 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 
 # 1. Sequencing.
 
-## Nanopore
+## Nanopore Long-Reads
 *     Number of Reads: 16,640,338
       Average Read Length: 3,080.31
       Coverage (500,000,000 bp genome size): 102.51
@@ -15,7 +15,7 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
       /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-reads/
 
 
-## Illumina
+## Short-Reads
 *     Read Set 1:
       Number of Reads: 285,849,119
       Average Read Length: 100
