@@ -6,7 +6,7 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 ## Nanopore Long-Reads
 *     Number of Reads: 16,640,338
       Average Read Length: 3,080.31
-      Coverage (500,000,000 bp genome size): 102.51
+      Coverage (502,343,981 bp genome size): 102.04
 
       Raw Sequences Location:
       /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/5074_test_LSK109_30JAN19-fast5_pass/
@@ -19,7 +19,7 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 *     Read Set 1:
       Number of Reads: 285,849,119
       Average Read Length: 100
-      Coverage (500,000,000 bp genome size): 57.17
+      Coverage (502,343,981 bp genome size): 56.90
 
       Location:
       /archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/DP8400020490TR_L01_28_1.fq.gz
@@ -29,7 +29,7 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 *     Read Set 2:
       Number of Reads: 243,647,638
       Average Read Length: 100
-      Coverage (500,000,000 bp genome size): 48.73
+      Coverage (502,343,981 bp genome size): 48.50
 
       Location:
       /archive/projects/EBP/physcomitrellopsis_africana_5075/Illumina_data/DP8400020490TR_L01_117_1.fq.gz
@@ -38,7 +38,7 @@ Moss Genome Assembly Spreadsheet: https://docs.google.com/spreadsheets/d/1okPKCp
 ## PhaseGenomics HiC
 *     Number of Reads: 72,164,138
       Average Read Length: 150
-      Coverage (500,000,000 bp genome size): 21.65
+      Coverage (502,343,981 bp genome size): 21.55
 
       Location:
       /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/hic/hic_pafricana_masurca_hybrid_assembly_nanopore_rmv_contam_illumina/fastq/5075_BKDL210029940-1a_raw_R1.fastq.gz
@@ -50,7 +50,7 @@ Basecalled Nanopore long reads were classified with [Centrifuge](https://ccb.jhu
 
 *     Number of Reads: 14,495,188
       Average Read Length: 2,232.47
-      Coverage (500,000,000 bp genome size): 64.72
+      Coverage (502,343,981 bp genome size): 64.42
 
       Location:
       /archive/projects/EBP/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/filter_contaminated_raw_promethion_reads/physcomitrellopsis_africana_promethion_fastq_reads-pass_rmv_contam.fastq
@@ -60,7 +60,7 @@ HiC sequencing reads were classified using Kraken to remove contaminated sequenc
 
 *     Number of Reads: 26,160,651
       Average Read Length: 150
-      Coverage (500,000,000 bp genome size): 7.85
+      Coverage (502,343,981 bp genome size): 7.81
 
       Location:
       /core/projects/EBP/Wegrzyn/Moss/Physcomitrellopsis_africana/Physcomitrellopsis_africana_Genome/RawData_Nanopore_5074/5074_test_LSK109_30JAN19/kraken/kraken_hic_pafricana/5075_BKDL210029940-1a_bpv_unclassified_1.fastq
